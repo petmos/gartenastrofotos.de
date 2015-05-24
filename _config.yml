@@ -1,0 +1,18 @@
+# Site settings
+title: Bill Glover
+email: bill@billglover.co.uk
+description: >
+  A technology architect with a tendency to tinker
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://billglover.info" # the base hostname & protocol for your site
+twitter_username: billglover
+github_username:  billglover
+timezone: Europe/London
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+
+# Markdown settings
+kramdown:
+  input: GFM
