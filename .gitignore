@@ -1,3 +1,5 @@
-_site
-.sass-cache
+_site/
+_drafts/
+.sass-cache/
 s3_website.yml
+.jekyll-metadata
