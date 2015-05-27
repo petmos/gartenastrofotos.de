@@ -18,7 +18,7 @@ My mistakes:
 
 I eventually cracked it and this post is an explanation of the misunderstandings I had which led to my issue. Documenting this helped me to crack the issue. Hopefully sharing it will help others.
 
-## Passing String - It Works!
+## Passing a String - It Works!
 
 {% gist billglover/692bcafeceae88a471fb %}
 
@@ -32,7 +32,7 @@ response: this is the response
 
 If you want to try this out for yourself, a working project is available on GitHub: [WatchKitDemo](https://github.com/billglover/WatchKitDemo "WatchKitDemo on GitHub").
 
-## Passing UIColor - It Doesn't!
+## Passing a UIColor - It Doesn't!
 
 {% gist billglover/81477e0fb4bc43069f70 %}
 
