@@ -16,3 +16,6 @@ highlighter: pygments
 # Markdown settings
 kramdown:
   input: GFM
+
+gems:
+  - jekyll-gist
