@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+{{ partial "profile.html" . }}
+	<main class="home">
+		<section id="post-list">
+			{{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
+			{{ range $paginator.Pages }}
+				{{ partial "post-list.html" . }}
+			{{ end }}
+		</section>
+		<nav>
+			{{ partial "pagination.html" . }}
+		</nav>
+	</main>
+{{ partial "footer.html" . }}

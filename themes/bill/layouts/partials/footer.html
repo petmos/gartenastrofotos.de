@@ -1,0 +1,14 @@
+	<footer>
+		<div id="social">
+			{{ $iconStyle := .Site.Params.socialIconStyle }}
+		    {{ range $key, $val := .Site.Social }}
+		    <a class="symbol" href="{{ $val }}">
+		        {{ $iconStyle }}{{ if eq $key "twitter" }}twitterbird{{ else }}{{ $key }}{{ end }}
+		    </a>
+		    {{ end }}
+		</div>
+
+		<p>&copy; Copyright {{ .Now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
+	</footer>
+</body>
+</html>

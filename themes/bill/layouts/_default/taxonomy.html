@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+<main class="taxonomy">
+
+	<header>
+		<h1>{{ .Title }}</h1>
+	</header>
+
+	<section id="post-list">
+		{{ range .Data.Pages }}
+		{{ partial "post-list.html" . }}
+		{{ end }}
+	</section>
+	<nav>
+		{{ partial "pagination.html" . }}
+	</nav>
+</main>
+{{ partial "footer.html" . }}

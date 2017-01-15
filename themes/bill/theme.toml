@@ -1,0 +1,7 @@
+name = "Bill"
+description = "A heavily modified version of the Cactus theme"
+features = ["blog"]
+
+[author]
+  name = "Bill"
+  homepage = "https://billglover.me/"

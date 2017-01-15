@@ -1,0 +1,38 @@
+languageCode: "en-gb"
+title: "Bill Glover"
+baseurl: "https://billglover.me/"
+theme: "bill"
+pygmentsuseclasses: true
+PygmentsCodeFences: true
+paginate: 5
+enableRobotsTXT: true
+MetaDataFormat: "yaml"
+
+permalinks:
+  post: /:year/:month/:day/:title/
+
+menu: 
+  main:
+    - 
+      name: "home"
+      url: "/"
+      weight: 100
+    -
+      name: "pgp"
+      url: "pgp/"
+      weight: 200
+
+params:
+  author: "Bill Glover"
+  description: "architecture - code - people"
+  socialIconStyle: "circle"
+
+social:
+  twitter: "https://www.twitter.com/billglover"
+  github: "https://www.github.com/billglover"
+  instagram: "https://www.instagram.com/billglover"
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+  series: "series"
