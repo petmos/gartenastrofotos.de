@@ -7,6 +7,7 @@ PygmentsCodeFences: true
 paginate: 5
 enableRobotsTXT: true
 MetaDataFormat: "yaml"
+disableHugoGeneratorInject: true
 
 permalinks:
   post: /:year/:month/:day/:title/
