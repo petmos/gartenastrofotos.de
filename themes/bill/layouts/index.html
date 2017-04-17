@@ -2,8 +2,7 @@
 {{ partial "profile.html" . }}
 	<main class="home">
 		<section id="post-list">
-			{{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
-			{{ range $paginator.Pages }}
+			{{ range where .Data.Pages.ByDate "Section" "post"}}
 				{{ partial "post-list.html" . }}
 			{{ end }}
 		</section>
