@@ -4,7 +4,7 @@ baseurl: "https://billglover.me/"
 theme: "bill"
 pygmentsuseclasses: true
 PygmentsCodeFences: true
-paginate: 5
+paginate: 10
 enableRobotsTXT: true
 MetaDataFormat: "yaml"
 disableHugoGeneratorInject: true
