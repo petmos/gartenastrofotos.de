@@ -499,10 +499,6 @@ pre code {
 	padding: 0;
 }
 
-.highlight pre {
-	background-color: inherit;
-}
-
 div.highlight {
 	border-radius: 3px;
 }
