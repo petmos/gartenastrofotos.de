@@ -2,7 +2,7 @@
 {{ partial "profile.html" . }}
 	<main class="home">
 		<section id="post-list">
-			{{ range where .Data.Pages.ByDate "Section" "post"}}
+			{{ range where .Data.Pages "Section" "post"}}
 				{{ partial "post-list.html" . }}
 			{{ end }}
 		</section>
