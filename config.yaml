@@ -1,7 +1,7 @@
 languageCode: "en-gb"
 title: "Bill Glover"
 baseurl: "https://billglover.me/"
-theme: "bill"
+theme: "cactus"
 pygmentsuseclasses: true
 PygmentsCodeFences: true
 paginate: 10
@@ -14,10 +14,6 @@ permalinks:
 
 menu: 
   main:
-    - 
-      name: "home"
-      url: "/"
-      weight: 100
     -
       name: "pgp"
       url: "pgp/"
@@ -27,6 +23,8 @@ params:
   author: "Bill Glover"
   description: "architecture - code - people"
   socialIconStyle: "circle"
+  name: "Bill Glover"
+  bio: "architecture - code - people"
 
 social:
   twitter: "https://www.twitter.com/billglover"
