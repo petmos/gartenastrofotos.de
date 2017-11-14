@@ -2,7 +2,6 @@
 title: "Creative AI"
 date: 2017-11-13T21:42:23Z
 description: "Could art hold the key to explaining the mysteries of Artificial Intelligence? What if we could exploring their inner thoughts? What if we could see them dream?"
-draft: true
 ---
 
 Luba Elliott opened the Cloud & Machine Learning track at the recent Google Developer Group event at UCL in London with a talk on the Creative Applications of Machine Learning. It was her closing question that motivated me to look into some of the artists she mentions.
