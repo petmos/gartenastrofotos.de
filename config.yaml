@@ -2,12 +2,11 @@ languageCode: "en-gb"
 title: "Bill Glover"
 baseurl: "https://billglover.me/"
 theme: "cactus"
-pygmentsuseclasses: true
-PygmentsCodeFences: true
 paginate: 10
 enableRobotsTXT: true
 MetaDataFormat: "yaml"
-disableHugoGeneratorInject: true
+pygmentsCodefences: true
+pygmentsUseClasses: true
 
 permalinks:
   post: /:year/:month/:day/:title/
