@@ -1,8 +1,10 @@
 ---
+title: "pgp"
 date: 2017-01-15T10:06:57Z
 description: ""
-title: pgp
 ---
+
+My PGP public key is shown below.
 
 ## Fingerprint
 
