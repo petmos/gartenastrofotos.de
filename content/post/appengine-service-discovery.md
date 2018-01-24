@@ -1,10 +1,8 @@
 ---
-title: "Service Discovery on Google App Engine"
+title: "Google App Engine: Service Discovery"
 date: 2018-01-06T22:47:51Z
 description: "It is possible to run multiple services within a single project on Google App Engine. In this post we explore how to implement rudimentary service discovery within your project. This eliminates the need to maintain separate service URLs during local development."
 ---
-
-# Google App Engine: Service Discovery
 
 It is possible to run multiple services within a single project on Google App Engine. In this post we explore the use of `ModuleHostname` to implement rudimentary service discovery within a simple App Engine project.
 
@@ -16,7 +14,7 @@ When developing a multi-service application using Google App Engine, I found mys
 
 To demonstrate how this works, I’m going to take you through a simple greetings service, the requirements for which are outlined below:
 
-1. As a user who has indicated my preferred language is English, I want to be greeted with the phrase “hello”. 
+1. As a user who has indicated my preferred language is English, I want to be greeted with the phrase “hello”.
 2. As a user who has indicated my preferred language is Chinese, I want to be greeted with the phrase “你好”.
 
 I’m going to create a simple project with three services, one that offers greetings in English, another that offers greetings in Chinese, and a default service that selects a greeting based on the language provided by the user. The project is laid out as follows.
@@ -35,6 +33,7 @@ I’m going to create a simple project with three services, one that offers gree
 ```
 
 ## Greeting Services (hello, nihao)
+
 Our two greeting services are similar but I have chosen to run these as separate services for the purposes of illustrating service discovery.
 
 Our first service, `hello` returns greetings in English.
@@ -116,10 +115,10 @@ INFO     2017-12-27 15:34:41,866 admin_server.py:146] Starting admin server at: 
 WARNING  2017-12-27 15:34:41,866 devappserver2.py:176] No default module found. Ignoring.
 ```
 
-We can see the URLs for our two distinct services as shown below. Ignore the warning due to the lack of the default module as we’ll address this later. 
+We can see the URLs for our two distinct services as shown below. Ignore the warning due to the lack of the default module as we’ll address this later.
 
-* `hello` is at http://localhost:8080
-* `nihao` is at http://localhost:8081
+* `hello` is at [http://localhost:8080](http://localhost:8080)
+* `nihao` is at [http://localhost:8081](http://localhost:8081)
 
 We can now test our `hello` service:
 
@@ -193,20 +192,21 @@ Do you want to continue (Y/n)?
 
 Instead of listening on different ports, each of our services is given a unique URL.
 
-* `hello` is at https://hello-dot-billglover-golang.appspot.com
-* `nihao` is at https://nihao-dot-billglover-golang.appspot.com
+* `hello` is at [https://hello-dot-billglover-golang.appspot.com](https://hello-dot-billglover-golang.appspot.com)
+* `nihao` is at [https://nihao-dot-billglover-golang.appspot.com](https://nihao-dot-billglover-golang.appspot.com)
 
 We can use these URLs to uniquely address each of our two greetings services.
 
 ## Default Service
+
 Now that we have our individual greeting services up and running, we can look to implementing a common service that handles all user requests and returns the appropriate greeting by calling our individual greetings services. We are going to make this our default service for the application.
 
 Every App Engine project has a default service. There are no hard and fast rules dictating how you should use this service, but it is common practice to use this to provision the entry point into the application and this is what we are going to do here.
 
 When implemented, we should have a service that behaves as follows.
 
-* https://our-service/en/  should respond with the greeting provided by the `hello` service.
-* https://our-service/zn/ should respond with the greeting provided by the `nihao` service.
+* [https://our-service/en/](https://our-service/en/) should respond with the greeting provided by the `hello` service.
+* [https://our-service/zn/](https://our-service/zn/) should respond with the greeting provided by the `nihao` service.
 
 Our default service needs to determine the user’s chosen language and then call the appropriate service to get the corresponding greeting. Let’s simulate these responses for now, just to get things up and running.
 
@@ -224,12 +224,12 @@ func init() {
 }
 
 func handlerEN(w http.ResponseWriter, r *http.Request) {
-  // TODO: call hello service
+	// TODO: call hello service
 	fmt.Fprint(w, "How should we greet you?")
 }
 
 func handlerZN(w http.ResponseWriter, r *http.Request) {
-  // TODO: call nihao service
+	// TODO: call nihao service
 	fmt.Fprint(w, "我们应该怎么给你打招呼？")
 }
 ```
@@ -264,9 +264,9 @@ INFO     2017-12-27 16:49:38,014 admin_server.py:146] Starting admin server at: 
 
 This time we can see that the warning about the missing service has been replaced with URLs to all three of our services.
 
-* `default` is at http://localhost:8080
-* `hello` is at http://localhost:8081
-* `nihao` is at http://localhost:8082
+* `default` is at [http://localhost:8080](http://localhost:8080)
+* `hello` is at [http://localhost:8081](http://localhost:8081)
+* `nihao` is at [http://localhost:8082](http://localhost:8081)
 
 We can test our `default` service responds in English:
 
