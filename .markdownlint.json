@@ -1,0 +1,10 @@
+{
+    "default": true,
+    "MD007": { "indent": 4 },
+    "no-hard-tabs": false,
+    "ol-prefix": false,
+    "line-length": false,
+    "first-header-h1": {"level": 2},
+    "first-line-h1": {"level": 2},
+    "no-trailing-spaces": {"br_spaces": 2}
+}
