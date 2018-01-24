@@ -12,9 +12,9 @@ Consider the three services used in my previous post on [Service Discovery](http
 
 With our existing project, all three services are publicly accessible at the following URLs.
 
-* https://billglover-greetings.appspot.com
-* https://hello-dot-billglover-greetings.appspot.com
-* https://nihao-dot-billglover-greetings.appspot.com
+* [https://billglover-greetings.appspot.com](https://billglover-greetings.appspot.com)
+* [https://hello-dot-billglover-greetings.appspot.com](https://hello-dot-billglover-greetings.appspot.com)
+* [https://nihao-dot-billglover-greetings.appspot.com](https://nihao-dot-billglover-greetings.appspot.com)
 
 We can test this by calling the  `default` and the underlying `hello` services respectively.
 
