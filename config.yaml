@@ -15,7 +15,7 @@ menu:
   main:
     -
       name: "pgp"
-      url: "pgp/"
+      url: "/pgp/"
       weight: 200
 
 params:
