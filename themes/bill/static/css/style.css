@@ -39,6 +39,12 @@ footer p {
 	margin-top: 20px;
 }
 
+#post-body figure {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Typography */
 
 h1 {
