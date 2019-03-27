@@ -32,21 +32,6 @@ Unfortunately, my slides don't include references mentioned during the talk. The
 * [On concurrency in Go HTTP servers ][ocighs], Eli Bendersky
 * [The Importance of Beginners][tiob_talk] ([slides][tiob_slides]), Natalie Pistunovich
 
-## Doubts
-
-I had several lingering doubts in the run-up to this talk. A couple of these still remain. I'm sharing these, not because I believe I managed to address them, but because I'm sure there are others who feel uneasy about speaking because of their doubts. If you find yourself in a similar position, and you'd like help working through it, I'll make time to talk.
-
-**Am I fraudulently badging myself as a #newbie?**
-
-I've been working in technology for over a decade. On more occasions than I feel comfortable admitting, I've found a room full of people turning to me for technical advice only to realise that they were looking to me because I was able to speak from experience. That doesn't sound like someone who can legitimately lay claim to the #newbie badge. So why was I pitching this as someone who was new to Go? Am I a newbie or just another Architect who can't code? While I'm still learning and continue to make mistakes, I am comfortable with being a #newbie. I would consider myself bordering on conversational but definitely not fluent.
-
-**Is this talk too much about me?**
-
-We all have our own approaches to learning, so how would a talk focussed on my specific journey benefit others? More importantly, would this only benefit those also in a position of privilege? There is no denying that I picked a lucky slip in the [Ovarian Lottery][ol]. I wanted to show that learning could be fun and that it was OK to make mistakes. I wanted to say that there is no right way to learn and to encourage those with experience to pay more attention to the journey and less about the destination. I'll leave it up to others to decide whether I achieved this.
-
-## What Next
-
-Despite the doubts, I really enjoyed both preparing and giving this talk. I continue to write Go and am in the early stages of adding a couple more nodes to that graph of projects. If you are open to sharing, I'd love to hear more about your journey to learn a technical topic, it doesn't have to be about Go. [Email me](mailto:bill@billglover.co.uk), or consider speaking at a local meet-up.
 
 [gt]: https://tour.golang.org
 [cb]: https://codebuddies.org
@@ -58,4 +43,3 @@ Despite the doubts, I really enjoyed both preparing and giving this talk. I cont
 [ocighs]: https://eli.thegreenplace.net/2019/on-concurrency-in-go-http-servers/
 [tiob_talk]: https://www.youtube.com/watch?v=7yMXs9TRvVI
 [tiob_slides]: https://speakerdeck.com/godays/the-importance-of-beginners-natalie-pistunovich-fraugster
-[ol]: https://www.warrenbuffett.com/buffetts-views-on-luck-life-winning-the-ovarian-lottery/
