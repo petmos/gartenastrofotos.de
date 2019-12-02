@@ -1,5 +1,5 @@
 ---
-title: "Server Timing Client Side"
+title: "Server Timing Client-Side"
 date: 2019-12-02T21:16:35Z
 description: "Browser tools have come a long way in helping us debug the performance of web applications. They have been constrained by the fact that they can only display client-side performance metrics, leaving us to look elsewhere to gain an understanding of back-end performance. I recently came across the `Server-Timing` specification that allows developers to augment this with a limited set of server timing information."
 ---
