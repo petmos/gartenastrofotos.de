@@ -1,10 +1,13 @@
 language: go
 sudo: required
 install:
-  - go get -v github.com/spf13/hugo@stable
+  - go mod init .
+  - go get -d -v github.com/spf13/hugo@stable
+  - go build
   - sudo pip install --upgrade pip
   - sudo pip install pygments
   - sudo pip install s3cmd
 script:
-  - hugo
+  - ls -al
+  - ./hugo
   - s3cmd sync --delete-removed --no-mime-magic --guess-mime-type --add-header="Cache-Control:max-age=3600" -P -M -r public/ s3://${AWS_BUCKET_NAME}/
