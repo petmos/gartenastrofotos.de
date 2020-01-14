@@ -1,9 +1,12 @@
 language: go
 sudo: required
 install:
-  - go mod init .
-  - go get -d -v github.com/spf13/hugo@stable
-  - go build
+  - mkdir /tmp/src
+  - cd /tmp/src
+  - git clone https://github.com/gohugoio/hugo.git
+  - git checkout stable
+  - cd hugo
+  - go install
   - sudo pip install --upgrade pip
   - sudo pip install pygments
   - sudo pip install s3cmd
