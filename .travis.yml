@@ -1,7 +1,7 @@
 language: go
 sudo: required
 install:
-  - go get -v github.com/spf13/hugo
+  - go get -v github.com/spf13/hugo@stable
   - sudo pip install --upgrade pip
   - sudo pip install pygments
   - sudo pip install s3cmd
