@@ -1,5 +1,5 @@
 ---
-title: "Go on ARM: why struct field alignemnt matters"
+title: "Go on ARM: why struct field alignment matters"
 date: 2020-06-19T14:00:00Z
 description: "I'd assumed the Go compiler provided a robust abstraction across CPU architectures. Code that ran on one CPU architecture would run on another. It turns out I was wrong. In this post, I provide a minimal example application that demonstrates the importance of field alignment when using `sync/atomic` and `64-bit` values."
 category: go
