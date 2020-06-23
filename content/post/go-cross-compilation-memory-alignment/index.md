@@ -182,7 +182,7 @@ A rule of thumb is to ensure that you define all atomically accessed 64-bit valu
 
 ## Conclusion
 
-Go Cross Compilation is so robust that we often take portability for for granted. It is cited as one of the main features of the Go toolchain and rightly so. But, as we've seen with this example, there are times when we need to take extra care to ensure things work as expected.
+Go cross compilation is so robust that we often take portability for granted. It is cited as one of the main features of the Go toolchain and rightly so. But, as we've seen with this example, there are times when we need to take extra care to ensure things work as expected.
 
 Although I've presented a contrived example here for simplicity. The challenge of writing portable code is real. My own foray into the world of memory alignment led to a fix for [issue #51](https://github.com/wavefrontHQ/wavefront-sdk-go/issues/51) in the Wavefront SDK for Go.
 
