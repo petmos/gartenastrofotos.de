@@ -6,3 +6,6 @@ public/*
 
 # Project directory
 .vscode/
+
+# Ignore Logs
+logs/*

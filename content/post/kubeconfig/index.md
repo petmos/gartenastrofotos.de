@@ -128,7 +128,7 @@ Here are some requirements:
 `kubectl` decides where to look for configuration based on three parameters.
 
 1. A single configuration file specified using the `--kubeconfig` flag
-2. An ordered list of config files pecified in the `KUBECONFIG` environment variable (envar).
+2. An ordered list of config files specified in the `KUBECONFIG` environment variable (envar).
 3. A named config file in the home directory, `~/.kube/config`
 
 The `KUBECONFIG` envar is the option that allows us to specify many config files. `kubectl` reads these files in order and, in the case of conflict, the first file to set a value wins. Note that `KUBECONFIG` needs to point to a colon separated list of files. You can't pass it a folder.
