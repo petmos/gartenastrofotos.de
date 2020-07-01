@@ -2,7 +2,7 @@
 title: "Conveying Context at the Terminal"
 date: 2020-07-02T06:00:00Z
 description: "I’ve run a few workshops recently that have involved streaming live terminal sessions to remote participants. During these workshops, we explore how different personas interact with Kubernetes. As we work through the topics, we switch between various personas. The terminal provides few visual clues as to the active persona. We can fix that."
-category: go
+category: tips
 ---
 
 {{< figure src="terminal_context.png" alt="A screenshot of the terminal showing a badge identifying the context">}}
