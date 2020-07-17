@@ -1,11 +1,15 @@
 ---
-title: "Add metrics to your Go application with Wavefront"
+title: "Instrument Go applications with Wavefront"
 date: 2020-07-17T06:00:00Z
 description: "With custom metrics, you are no longer constrained to using technical indicators as a proxy for a business event. In this post I take you through how to use Wavefront to add custom metrics to your application. Ever wanted to see your electricity consumption up on a dashbaord? This post is for you."
 category: tech
+aliases:
+    - /2020/07/17/add-metrics-to-your-go-application-with-wavefront/
 ---
 
 In the [Part One](/2020/07/09/logging-metrics-its-a-journey/) of this series, I looked back at my experience with using application logs to gain insight into application and system performance. Despite the wealth of information these logs contain, much of it goes untapped. The advent of log analytics saw a step change in the information we were able to retrieve from his goldmine of untapped data. This served as a catalyst, prompting both development teams and businesses to demand more insight from their applications. But this didn't come without challenges. The performance challenges and the coordination required to reliably obtain business metrics from log-based solutions are not insignificant. This has given rise to a new era in observability, the era of the metric.
+
+{{< figure src="owl-dashboard.png" alt="An example dashboard showing power consumption at home.">}}
 
 In this post, I take an existing application, written in Go, and use Wavefront to capture custom metrics. If you’d prefer a video walkthrough, jump to the end of the post.
 
@@ -212,5 +216,5 @@ I recorded a walkthrough showing how I added metrics to my Go Owl application. I
 In Part 3, I will use Wavefront to add tracing to a Go application.
 
 * **Part 1**: [Logging & Metrics: It’s a Journey](/2020/07/09/logging-metrics-its-a-journey/)
-* **Part 2**: Add metrics to your Go application with Wavefront (this post)
+* **Part 2**: Instrument Go applications with Wavefront (this post)
 * **Part 3**: Add tracing to your Go application with Wavefront (coming soon)

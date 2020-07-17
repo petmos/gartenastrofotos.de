@@ -90,5 +90,5 @@ So far we’ve looked at logs and metrics from the perspective of the consumer a
 In the next couple of posts, I will use [Tanzu Observability by Wavefront](https://www.wavefront.com/) to explore the what it takes to add metrics and tracing to two Go applications.
 
 * **Part 1**: Logging & Metrics: It’s a Journey (this post)
-* **Part 2**: Add metrics to your Go application with Wavefront (coming soon)
+* **Part 2**: [Instrument Go applications with Wavefront](/2020/07/17/add-metrics-to-your-go-application-with-wavefront/)
 * **Part 3**: Add tracing to your Go application with Wavefront (coming soon)
