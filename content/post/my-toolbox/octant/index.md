@@ -1,14 +1,15 @@
 ---
 title: "My Toolbox: Octant"
-date: 2020-10-09T10:00:00Z
-description: ""
+date: 2020-10-12T10:00:00Z
+description: "If you work with Kubernetes, I recommend you take a look at Octant, a VMware backed tool that allows you to visualise and work with deployments on top of Kubernetes."
 category: tech
 series: [toolbox]
+draft: false
 ---
 
 ![octant](octant_overview.png)
 
-We are constantly presented with new tools all the time; scripts, themes, code editors, etc. We try them, we forget about them, and before you know it a `brew update` take minutes rather than seconds to run. The few tools that do tend to stick around are those that solve a real need. Octant is one such tool. It's not just the latest addition to my toolbox, it's one that I'm turning to with increasing regularity.
+We are constantly presented with new tools all the time; scripts, themes, or even code editors. We try them, we forget about them, and before you know it a `brew update` take minutes rather than seconds to run. The few tools that do tend to stick around are those that solve a real need. Octant is one such tool. It's not just the latest addition to my toolbox, it's one that I'm turning to with increasing regularity.
 
 <table>
     <tr>
@@ -40,7 +41,7 @@ While it is possible to explore a more complex Kubernetes deployments using `kub
 
 ![octant](octant_deployment.png)
 
-Octant solves this problem by allowing me to show resource state along with a graphical relationship between resources. It does so much more than this, but it is this feature alone that has me reaching for it several times a day. If you have access to a working Kubernetes cluster, you can try this now.
+Octant solves this problem by allowing me to show resource state along with a graphical relationship between resources. It does much more than this, but it is this feature alone that has me reaching for it several times a day. If you have access to a working Kubernetes cluster, you can try this now.
 
 ```plain
 brew install octant
@@ -60,4 +61,4 @@ Octant began with a simple purpose, to answer the question "[Is my Application U
 * In-browser YAML editor
 * Extensible through plugins
 
-If you work with Kubernetes, I highly recommend you give Octant a try. If you want to hear more about the origins from Bryan Liles himself, I highly recommend this episode of the GoTime Podcast: [Enterprise Go?](https://changelog.com/gotime/124).
+If you work with Kubernetes, I recommend you give Octant a try. If you want to hear more about the origins of Octant from Bryan Liles himself, listen to this episode of the GoTime Podcast: [Enterprise Go?](https://changelog.com/gotime/124).
