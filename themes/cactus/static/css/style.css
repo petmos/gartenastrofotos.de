@@ -668,3 +668,13 @@ a.symbol:hover {
 	content: "]";
 	margin-left: 1px;
 }
+
+.float-right {
+	float: right;
+	padding-left: 0.5rem;
+}
+
+.float-left {
+	float: left;
+	padding-right: 0.5rem;
+}
