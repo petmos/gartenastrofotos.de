@@ -1,6 +1,9 @@
 # ignore generated content
 public/*
 
+# ignore build files
+.hugo_build.lock
+
 # ignore OS files
 .DS_Store
 
