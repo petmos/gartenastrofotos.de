@@ -1,0 +1,37 @@
+languageCode: en-gb
+title: Bill Glover
+baseurl: 'https://billglover.me/'
+theme: cactus
+paginate: 10
+enableRobotsTXT: true
+MetaDataFormat: yaml
+pygmentsCodefences: true
+pygmentsUseClasses: true
+permalinks:
+  post: '/:year/:month/:day/:title/'
+menu:
+  main:
+    - name: pgp
+      url: /pgp/
+      weight: 200
+params:
+  author: Bill Glover
+  description: architecture - code - people
+  name: Bill Glover
+  bio: architecture - code - people
+  twitter: BillGlover
+social:
+  rss-square: /index.xml
+  twitter: 'https://www.twitter.com/billglover'
+  github: 'https://www.github.com/billglover'
+  mastodon: 'https://mastodon.technology/@bill'
+  twitch: 'https://www.twitch.tv/billgloveruk'
+  linkedin: 'https://www.linkedin.com/in/billgloveruk/'
+taxonomies:
+  tag: tags
+  category: categories
+  series: series
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
