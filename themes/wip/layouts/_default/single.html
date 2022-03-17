@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article itemscope itemType="https://schema.org/BlogPosting">
+    <header>
+        <h1>Single {{ .Title }}</h1>
+    </header>
+    <main itemprop="articleBody">
+        {{ block "content" . }}
+        {{- .Content }}
+        {{- end }}
+    </main>
+    <footer>
+        Single Footer
+    </footer>
+</article>
+{{- end }}

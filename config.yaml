@@ -1,7 +1,7 @@
 languageCode: en-gb
 title: Bill Glover
 baseurl: 'https://billglover.me/'
-theme: cactus
+theme: wip
 paginate: 10
 enableRobotsTXT: true
 MetaDataFormat: yaml
@@ -11,6 +11,15 @@ permalinks:
   post: '/:year/:month/:day/:title/'
 menu:
   main:
+    - name: about
+      url: /about/
+      weight: 100
+    - name: blog
+      url: /blog/
+      weight: 100
+    - name: github
+      url: https://github.com/billglover
+      weight: 100
     - name: pgp
       url: /pgp/
       weight: 200
