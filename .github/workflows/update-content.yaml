@@ -1,12 +1,13 @@
 name: "Update Content"
 on:
   workflow_dispatch:
+    types:
+      - update-content
 
 jobs:
   update-content:
     name: "Update Content"
     runs-on: ubuntu-latest
-    if: github.event.action == 'publish'
   
     defaults:
       run:
