@@ -1,8 +1,6 @@
 name: Publish Dev
 
 on:
-  schedule:
-    - cron: '0 7 * * *'
   push:
     branches:
       - '*'
