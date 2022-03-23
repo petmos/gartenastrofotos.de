@@ -1,0 +1,25 @@
+.md p {
+    padding: 0.5rem 0;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid var(--color-secondary);
+    padding-top: 0 !important;
+    padding-left: 1rem;
+}
+
+blockquote > p:first-child {
+    padding-top: 0 !important;
+}
+
+.md pre {
+    display: block;
+    overflow-x: auto;
+    white-space: pre;
+    padding: 0.5rem 0.5rem;
+    line-height: 1.4;
+}
+
+
+

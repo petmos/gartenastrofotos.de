@@ -1,21 +1,25 @@
 {{ define "main" }}
-<header>
+<header class="md">
     {{.Content}}
 </header>
 <section>
     <h3>Sections</h3>
     <ul>
-        {{ range .Site.Sections }}
-        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+        {{ range .Site.Sections.ByTitle.Reverse }}
+        <li><a href="{{.Permalink}}">{{.Title}}</a> {{ len (where .Site.RegularPages "Section" "==" .Section) }}</li>
         {{ end }}
     </ul>
 </section>
 <section>
     <h3 class="h-feed">On the Blog</h3>
-    <ul>
-        {{ range first 10 .Site.RegularPages }}
-        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+    {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ range $pages.GroupByDate "2006" }}
+    <h4>{{ .Key }}</h4>
+    <ul class="post-list">
+        {{ range .Pages }}
+        {{ .Render "li" }}
         {{ end }}
     </ul>
+    {{ end }}
 </section>
 {{ end }}

@@ -1,1 +1,10 @@
-<footer>Default Page Footer</footer>
+{{ $scratch := newScratch }}
+{{ range (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+{{ $scratch.Add "wordcount" .WordCount }}
+{{ end }}
+<footer>
+{{ with .Site.Params.copyright }}
+{{ . }}
+{{ end }}
+| {{ $scratch.Get "wordcount" | lang.FormatNumberCustom 0 }} words
+</footer>
