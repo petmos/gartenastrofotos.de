@@ -7,15 +7,31 @@ enableRobotsTXT: true
 MetaDataFormat: yaml
 pygmentsCodefences: true
 pygmentsUseClasses: true
+pluralizelisttitles: "false"
+enableGitInfo: true
 permalinks:
   post: '/:year/:month/:day/:title/'
+
+# Theme parameters
+params:
+  author: Bill Glover
+  displayTitle: false
+  description: architecture - code - people
+  copyright: "Copyright © 2022 Bill Glover"
+  showUpdated: false
+  mainSections:
+    - post
+
+
+# Use a menu rather than a generated list of sections to avoid
+# odd naming issues with pluralisation.
 menu:
   main:
-    - name: about
-      url: /about/
-      weight: 100
+    - name: home
+      url: /
+      weight: 10
     - name: blog
-      url: /blog/
+      url: /posts/
       weight: 100
     - name: github
       url: https://github.com/billglover
@@ -23,12 +39,7 @@ menu:
     - name: pgp
       url: /pgp/
       weight: 200
-params:
-  author: Bill Glover
-  description: architecture - code - people
-  name: Bill Glover
-  bio: architecture - code - people
-  twitter: BillGlover
+
 social:
   rss-square: /index.xml
   twitter: 'https://www.twitter.com/billglover'
