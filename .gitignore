@@ -3,6 +3,7 @@ public/*
 
 # ignore build files
 .hugo_build.lock
+*.bak
 
 # ignore OS files
 .DS_Store
