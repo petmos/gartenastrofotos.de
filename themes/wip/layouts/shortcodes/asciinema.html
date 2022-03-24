@@ -1,0 +1,17 @@
+<div id="{{ with .Get "key" }}{{ . }}{{ end }}"></div>
+<script>
+    AsciinemaPlayer.create(
+        '{{ with .Get "key" }}{{ . }}{{ end }}.cast',
+        document.getElementById('{{ with .Get "key" }}{{ . }}{{ end }}'),
+        {
+            cols: {{- if .Get "cols" -}}{{- safeJS (.Get "cols") -}}{{- else -}}100{{- end -}},
+            rows: {{- if .Get "rows" -}}{{- safeJS (.Get "rows") -}}{{- else -}}24{{- end }},
+            autoPlay: {{- if .Get "autoPlay" -}}{{- safeJS (.Get "autoPlay") -}}{{- else -}}false{{- end }},
+            preload: {{- if .Get "preload" -}}{{- safeJS (.Get "preload") -}}{{- else -}}false{{- end }},
+            loop: {{- if .Get "loop" -}}{{- safeJS (.Get "loop") -}}{{- else -}}false{{- end }},
+            speed: {{- if .Get "speed" -}}{{- safeJS (.Get "speed") -}}{{- else -}}1{{- end }},
+            idleTimeLimit: {{- if .Get "idleTimeLimit" -}}{{- safeJS (.Get "idleTimeLimit") -}}{{- else -}}2{{- end }},
+            theme: {{- if .Get "theme" -}}{{- .Get "theme" -}}{{- else -}}"asciinema"{{- end }}
+        }
+        );
+</script>
