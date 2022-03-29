@@ -1,0 +1,10 @@
+<ul class="post-list">
+    {{ range .Pages.GroupByDate "2006" }}
+    <h4>{{ .Key }}</h4>
+    <ul class="post-list">
+        {{ range .Pages }}
+        {{ .Render "li" }}
+        {{ end }}
+    </ul>
+    {{ end }}
+</ul>

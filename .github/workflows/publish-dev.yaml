@@ -1,8 +1,6 @@
 name: Publish Dev
 
 on:
-  schedule:
-    - cron: '0 7 * * *'
   push:
     branches:
       - '*'
@@ -26,10 +24,9 @@ jobs:
         hugo-version: 'latest'
     
     - name: build
-      run: hugo -d dev.billglover.me
+      run: hugo -v -b "https://dev.billglover.me/" --buildDrafts
 
     - name: deploy
-      if: github.ref == 'refs/heads/main'
       uses: appleboy/scp-action@master
       with:
         host: ${{ secrets.SSH_HOST }}

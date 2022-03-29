@@ -1,0 +1,13 @@
+{{ define "main" }}
+<header>
+    <h1>{{ .Title }}</h1>
+</header>
+<section>
+    {{- partial "posts.html" . -}}
+</section>
+<footer></footer>
+{{- end }}
+
+{{ define "header" }}
+{{- partial "header" . -}}
+{{ end }}

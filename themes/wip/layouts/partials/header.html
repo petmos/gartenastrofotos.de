@@ -1,0 +1,15 @@
+<header class="header flex">
+    <div class="header_row">
+        {{ if .Site.Params.showHeader }}
+        <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        {{ end }}
+    </div>
+    
+    <nav class="header_row">
+        <ul>
+            {{ range $.Site.Menus.main }}
+            <li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Name | lower }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>

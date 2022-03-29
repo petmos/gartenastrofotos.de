@@ -1,0 +1,63 @@
+:root {
+    --tag-color: var(--color-primary);
+    --tag-hover-color: var(--accent);
+    --tag-background-color: var(--color-accent-1-light);
+    --tag-hover-background-color: var(--color-accent-1-light);
+    --tag-border-color: var(--color-primary);
+    --tag-hover-border-color: var(--color-secondary);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.tag {
+    font-size: 0.8em;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: inline-flex;
+    padding: 0.01em 0.25em 0.01em 0.25em;
+    margin: 0 0.5rem 0 0;
+    /*box-shadow: var(--tag-border-color) 0 0 0 1px inset;*/
+    background-color: var(--tag-background-color);
+}
+
+.tag a {
+    text-decoration: none;
+    color: var(--tag-color);
+    text-decoration: none;
+}
+
+.tag a:hover {
+    color: var(--tag-hover-color);
+    text-decoration: none;
+}
+
+.tag:hover {
+    /*box-shadow: var(--tag-hover-border-color) 0 0 0 1px inset;*/
+    background-color: var(--tag-hover-background-color);
+    color: var(--tag-hover-color);
+}
+
+.tag .prefix {
+    margin-right: 0.5rem;
+}
+
+/*
+.tag:has([href$='/tags/kubernetes/']) {
+    --tag-color: white;
+    --tag-background-color: lightblue;
+    --tag-hover-color: black;
+    --tag-hover-background-color: blue;
+}
+
+.tag:has([href$='/tags/go/']) {
+    --tag-color: white;
+    --tag-background-color: blue;
+    --tag-hover-color: black;
+    --tag-hover-background-color: blue;
+}
+*/

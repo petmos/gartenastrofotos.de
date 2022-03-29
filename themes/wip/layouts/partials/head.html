@@ -1,0 +1,27 @@
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    {{ with .Site.Params.description }}
+    <meta name="description" content="{{ . }}">{{ end }}
+
+    <link rel="stylesheet" href="{{ "css/layout.css" | absURL}}" crossorigin="anonymous" media="screen">
+
+    <link rel="shortcut icon" type="image/png" href="{{ "img/favicon-32x32.png" | absURL }}" sizes="32x32" />
+    <link rel="apple-touch-icon" href="{{ "img/favicon-32x32.png" | absURL }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ "img/favicon-32x32.png" | absURL }}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ "img/favicon-16x16.png" | absURL }}" sizes="16x16" />
+
+    <script defer data-domain="dev.billglover.me" src="https://plausible.billglover.me/js/plausible.js"></script>
+
+    {{ if .Params.asciinema }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}asciinema/asciinema-player.css" />
+    <script src="{{ .Site.BaseURL }}asciinema/asciinema-player.js"></script>
+    {{ end }}
+
+    <!-- alternative formats -->
+    {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+</head>

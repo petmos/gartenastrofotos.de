@@ -1,25 +1,63 @@
 languageCode: en-gb
 title: Bill Glover
 baseurl: 'https://billglover.me/'
-theme: cactus
+theme: wip
 paginate: 10
 enableRobotsTXT: true
 MetaDataFormat: yaml
 pygmentsCodefences: true
 pygmentsUseClasses: true
+pluralizelisttitles: "false"
+enableGitInfo: true
 permalinks:
   post: '/:year/:month/:day/:title/'
-menu:
-  main:
-    - name: pgp
-      url: /pgp/
-      weight: 200
+
+# Theme parameters
 params:
   author: Bill Glover
+  displayTitle: false
   description: architecture - code - people
-  name: Bill Glover
-  bio: architecture - code - people
-  twitter: BillGlover
+  copyright: "Copyright © 2022 Bill Glover"
+  avatar: img/avatar.jpg
+  showUpdated: false
+  menuOnIndex: false
+  mainSections:
+    - post
+
+
+# Use a menu rather than a generated list of sections to avoid
+# odd naming issues with pluralisation.
+menu:
+  main:
+    - name: home
+      url: /
+      weight: 10
+    - name: blog
+      url: /post/
+      weight: 20
+    - name: notes
+      url: /notes/
+      weight: 30
+    - name: github
+      url: https://github.com/billglover
+      weight: 40
+    - name: contact
+      url: /contact/
+      weight: 50
+  index:
+    - name: blog
+      url: /post/
+      weight: 10
+    - name: notes
+      url: /notes/
+      weight: 20
+    - name: github
+      url: https://github.com/billglover
+      weight: 30
+    - name: contact
+      url: /contact/
+      weight: 40
+
 social:
   rss-square: /index.xml
   twitter: 'https://www.twitter.com/billglover'

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{- partial "head" . -}}
+
+<body>
+    {{- block "header" . }}
+    {{ end }}
+
+    <main class="content">
+        {{- block "main" . }}
+        Default Content
+        {{- end }}
+    </main>
+
+    {{- partial "footer" . -}}
+
+    {{ if .Site.IsServer }}
+    <div style="text-align: center;">
+        <code>
+            Currently viewing <em>{{ .Title }}</em> (a <em>{{ .Kind }} {{ .Type }}</em> at <em>{{ .RelPermalink }}</em>) in section: <em>{{ .CurrentSection.Name }}</em>.
+        </code>
+    </div>
+    {{ end }}
+</body>
+
+</html>
