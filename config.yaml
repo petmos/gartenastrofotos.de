@@ -1,6 +1,6 @@
 languageCode: en-gb
 title: Bill Glover
-baseurl: 'https://billglover.me/'
+baseurl: 'https://dev.billglover.me/'
 theme: wip
 paginate: 10
 enableRobotsTXT: true
@@ -23,6 +23,7 @@ params:
   menuOnIndex: false
   mainSections:
     - post
+  plausible: https://plausible.billglover.me/js/plausible.js
 
 
 # Use a menu rather than a generated list of sections to avoid

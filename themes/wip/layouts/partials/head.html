@@ -13,7 +13,10 @@
     <link rel="icon" type="image/png" href="{{ "img/favicon-32x32.png" | absURL }}" sizes="32x32" />
     <link rel="icon" type="image/png" href="{{ "img/favicon-16x16.png" | absURL }}" sizes="16x16" />
 
-    <script defer data-domain="dev.billglover.me" src="https://plausible.billglover.me/js/plausible.js"></script>
+    {{ if .Site.Params.plausible }}
+    {{ $url := urls.Parse (.Site.BaseURL) }}
+    <script defer data-domain="{{ $url.Host }}" src="{{ .Site.Params.plausible }}"></script>
+    {{ end }}
 
     {{ if .Params.asciinema }}
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}asciinema/asciinema-player.css" />
