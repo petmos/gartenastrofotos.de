@@ -1,6 +1,6 @@
 languageCode: en-gb
 title: Bill Glover
-baseurl: 'https://dev.billglover.me/'
+baseurl: 'https://billglover.me/'
 theme: wip
 paginate: 10
 enableRobotsTXT: true
