@@ -19,4 +19,9 @@
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}asciinema/asciinema-player.css" />
     <script src="{{ .Site.BaseURL }}asciinema/asciinema-player.js"></script>
     {{ end }}
+
+    <!-- alternative formats -->
+    {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
 </head>

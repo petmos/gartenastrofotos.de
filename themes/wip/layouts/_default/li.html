@@ -4,7 +4,7 @@
         <a class="p-category properties" id="tag" href="{{ .Permalink }}">#{{.LinkTitle}}</a>
     </span>
     {{ end }}
-    <a href="{{ .Permalink }}" title="{{ .Title }}">
+    <a href="{{ .Permalink }}" title="{{ .Title }}" class="title">
         {{ .Title }}
     </a>
     <small><time>{{ .Date | time.Format (i18n "posts.date") }}</time></small>

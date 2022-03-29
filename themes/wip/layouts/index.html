@@ -1,17 +1,23 @@
 {{ define "main" }}
-<header class="md">
-    {{.Content}}
+<header class="intro">
+    <section class="profile">
+        <figure class="avatar">
+            <img src="{{ .Site.Params.avatar | absURL }}" />
+        </figure>
+        <span class="md">
+            {{.Content}}
+        </span>
+        <nav>
+            <ul>
+                {{ range $.Site.Menus.index }}
+                <li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Name | lower }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </section>
 </header>
+
 <section>
-    <h3>Sections</h3>
-    <ul>
-        {{ range .Site.Sections.ByTitle.Reverse }}
-        <li><a href="{{.Permalink}}">{{.Title}}</a> {{ len (where .Site.RegularPages "Section" "==" .Section) }}</li>
-        {{ end }}
-    </ul>
-</section>
-<section>
-    <h3 class="h-feed">On the Blog</h3>
     {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ range $pages.GroupByDate "2006" }}
     <h4>{{ .Key }}</h4>

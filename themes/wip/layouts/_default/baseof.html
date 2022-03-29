@@ -3,7 +3,8 @@
 {{- partial "head" . -}}
 
 <body>
-    {{- partial "header" . -}}
+    {{- block "header" . }}
+    {{ end }}
 
     <main class="content">
         {{- block "main" . }}

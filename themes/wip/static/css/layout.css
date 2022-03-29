@@ -35,7 +35,6 @@ body {
 .header {
     min-width: var(--content-width);
     justify-content: space-between !important;
-    border-bottom: 1px solid var(--color-shadow);
     margin-bottom: var(--content-margin);
     display: flex;
     align-items: center;
@@ -49,6 +48,13 @@ body>footer {
     max-width: var(--content-width);
     margin: 0 auto;
     align-items: center !important;
+    border-top: 1px solid var(--color-accent-1);
+    padding: 0 var(--item-margin);
+}
+
+footer section {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 img {
@@ -66,7 +72,7 @@ img {
     align-items: center;
 }
 
-nav ul {
+.header_row ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -76,7 +82,24 @@ nav ul {
 
 nav ul li {
     list-style-type: none;
-    margin: 0 2rem;
+    margin: 0 1.5rem;
+}
+
+.intro nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.intro nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1rem;
+    border-right: 1px solid var(--color-shadow);
+}
+
+.intro nav ul li:last-of-type {
+    border-right: none;
 }
 
 a {
@@ -94,25 +117,92 @@ a:hover {
 }
 
 .post-list li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:baseline;
     list-style: none;
+    padding-bottom: 0.25em;
+}
+
+.post-list .title {
+    order: 2;
+}
+
+.post-list .tag {
+    order: 1
 }
 
 .post-list li small  {
+    order: 3;
     color: grey;
-    padding-left: 0.5rem;
+    padding-left: 0.5em;
     font-style: italic;
 }
 
+.intro {
+    display: box;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile p {
+    margin-top:0;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+small {
+    font-size: 0.8em;
+}
+
 @media all and (max-width: 640px) {
-    nav ul {
-        flex-direction: column;
-        justify-content: flex-start;
+    nav.header_row ul li {
+        margin: 0;
+        padding: 0.5em 0.5rem;
+        border-right: 1px solid var(--color-shadow);
     }
+    nav.header_row ul li:last-of-type {
+        border-right: none;
+    }
+
     .header {
-        flex-direction: column;
+        /*flex-direction: column;*/
         align-items: stretch;
     }
     .header_row {
         height: auto;
+    }
+    .post-list li {
+        padding-bottom: 0.75em;
+    }
+    .post-list .title {
+        order: 1;
+        flex: 1 0 100%;
+    }
+    .post-list .tag {
+        order: 3;
+    }
+    .post-list li small  {
+        order: 2;
+        padding-left: 0;
+        padding-right: 0.5em;
     }
 }
