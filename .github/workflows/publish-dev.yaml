@@ -24,7 +24,7 @@ jobs:
         hugo-version: 'latest'
     
     - name: build
-      run: hugo -v -b "https://dev.billglover.me/" --buildDrafts
+      run: hugo -v -b "https://dev.billglover.me/" --buildDrafts --buildFuture
 
     - name: deploy
       uses: appleboy/scp-action@master
