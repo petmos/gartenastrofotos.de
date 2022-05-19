@@ -191,6 +191,7 @@ figcaption {
     line-height: normal;
     padding-left: 0.8rem;
     font-style: italic;
+    margin-bottom: 16px;
 }
 
 figcaption h4 {
