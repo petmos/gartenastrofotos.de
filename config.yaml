@@ -12,6 +12,13 @@ enableGitInfo: true
 permalinks:
   post: '/:year/:month/:day/:title/'
 
+frontmatter:
+  lastmod:
+  - lastmod
+  - :git
+  - date
+  - publishDate
+
 # Theme parameters
 params:
   author: Bill Glover
@@ -19,7 +26,7 @@ params:
   description: architecture - code - people
   copyright: "Copyright © 2022 Bill Glover"
   avatar: img/avatar.jpg
-  showUpdated: false
+  showUpdated: true
   menuOnIndex: false
   mainSections:
     - post
@@ -39,6 +46,9 @@ menu:
     - name: notes
       url: /notes/
       weight: 30
+    - name: videos
+      url: /videos/
+      weight: 35
     - name: github
       url: https://github.com/billglover
       weight: 40
@@ -52,6 +62,9 @@ menu:
     - name: notes
       url: /notes/
       weight: 20
+    - name: videos
+      url: /videos/
+      weight: 25
     - name: github
       url: https://github.com/billglover
       weight: 30
