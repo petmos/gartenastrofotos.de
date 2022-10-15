@@ -186,6 +186,18 @@ article figure img {
     height: auto;
 }
 
+figure.half-width {
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+    max-width: 49%;
+}
+
+figure.half-width img {
+    max-width: auto;
+    min-width: auto;
+}
+
 figcaption {
     border-left: 2px solid var(--color-shadow);
     line-height: normal;
