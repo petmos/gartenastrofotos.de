@@ -31,6 +31,8 @@ params:
   mainSections:
     - post
   plausible: https://plausible.billglover.me/js/plausible.js
+  relMe:
+    mastodon: https://fosstodon.org/@billglover
 
 
 # Use a menu rather than a generated list of sections to avoid
