@@ -1,20 +1,11 @@
-{{ $scratch := newScratch }}
-{{ range (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-{{ $scratch.Add "wordcount" .WordCount }}
-{{ end }}
 <footer class="site-footer">
     <section class="md">
-        You can find me as <a href="https://mastodon.technology/@bill" rel="me">@Bill</a> 
-        on Mastodon or <a href="https://twitter.com/billglover" rel="me">@BillGlover</a> 
-        on Twitter. My code is available on 
-        <a href="https://github.com/billglover" rel="me">Github</a>. 
-        Or <a href="mailto:bill@billglover.co.uk">email me</a>. Looking for 
-        me elsewhere? <a href="/contact">Contact me</a>.
+        You can find me as <a href="https://fosstodon.org/@billglover" rel="me">@BillGlover</a> 
+        on Mastodon. <a href="mailto:bill@billglover.co.uk">Email me</a>, or find me <a href="/contact">elsewhere</a>.
     </section>
     {{ with .Site.Params.copyright }}
     <section class="copyright">
         {{ . }}
     </section>
     {{ end }}
-<!-- {{ $scratch.Get "wordcount" | lang.FormatNumberCustom 0 }} words -->
 </footer>
