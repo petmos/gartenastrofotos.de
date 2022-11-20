@@ -20,12 +20,19 @@
   @media (prefers-color-scheme: dark) {
     :root {
       /* Change me */
-      --accent: #dec1f8;
+      --accent: rgb(249, 31, 136);
       --color-primary: white;
       --color-secondary: #ccc;
       --color-bg: #24292e;
       --color-shadow: #ccc;
       --item-bg: #2d3339;
+
+      --color-accent-1: rgb(249, 31, 136);
+      --color-accent-1-light: rgb(101, 115, 129);
+      --color-accent-1-lightest: rgba(83, 70, 196, 0.1);
+      --color-accent-2: rgba(103, 95, 171, 1);
+      --color-accent-2-light: rgba(103, 95, 171, 0.3);
+      --color-accent-2-lightest: rgba(103, 95, 171, 0.1);
     }
   }
   
