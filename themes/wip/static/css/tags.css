@@ -12,10 +12,16 @@
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
+    margin: auto 0;
+    height: 100%;
+}
+
+.meta .tags {
+    padding-left: 1rem;
 }
 
 .tag {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     border-radius: 5px;
     box-sizing: border-box;
     display: inline-flex;
