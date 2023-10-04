@@ -30,9 +30,10 @@ params:
   menuOnIndex: false
   mainSections:
     - post
+    - watch
   plausible: https://plausible.billglover.me/js/plausible.js
   relMe:
-    mastodon: https://fosstodon.org/@billglover
+    mastodon: https://hachyderm.io/@bill
 
 
 # Use a menu rather than a generated list of sections to avoid
@@ -51,6 +52,9 @@ menu:
     - name: videos
       url: /videos/
       weight: 35
+    - name: photos
+      url: /photos/
+      weight: 36
     - name: github
       url: https://github.com/billglover
       weight: 40
@@ -67,6 +71,9 @@ menu:
     - name: videos
       url: /videos/
       weight: 25
+    - name: photos
+      url: /photos/
+      weight: 26
     - name: github
       url: https://github.com/billglover
       weight: 30
@@ -76,10 +83,8 @@ menu:
 
 social:
   rss-square: /index.xml
-  twitter: 'https://www.twitter.com/billglover'
   github: 'https://www.github.com/billglover'
   mastodon: 'https://mastodon.technology/@bill'
-  twitch: 'https://www.twitch.tv/billgloveruk'
   linkedin: 'https://www.linkedin.com/in/billgloveruk/'
 taxonomies:
   tag: tags

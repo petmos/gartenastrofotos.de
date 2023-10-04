@@ -1,23 +1,23 @@
 {
-  "subject": "acct:billglover@fosstodon.org",
+  "subject": "acct:bill@hachyderm.io",
   "aliases": [
-    "https://fosstodon.org/@billglover",
-    "https://fosstodon.org/users/billglover"
+    "https://hachyderm.io/@bill",
+    "https://hachyderm.io/users/bill"
   ],
   "links": [
      {
       "rel": "http://webfinger.net/rel/profile-page",
       "type": "text/html",
-      "href": "https://fosstodon.org/@billglover"
+      "href": "https://hachyderm.io/@bill"
     },
     {
       "rel": "self",
       "type": "application/activity+json",
-      "href": "https://fosstodon.org/users/billglover"
+      "href": "https://hachyderm.io/users/bill"
     },
     {
       "rel": "http://ostatus.org/schema/1.0/subscribe",
-      "template": "https://fosstodon.org/authorize_interaction?uri={uri}"
+      "template": "https://hachyderm.io/authorize_interaction?uri={uri}"
     }
   ]
 }
