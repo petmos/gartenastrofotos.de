@@ -24,7 +24,7 @@ params:
   author: Bill Glover
   displayTitle: false
   description: architecture - code - people
-  copyright: "Copyright © 2022 Bill Glover"
+  copyright: "Copyright © 2023 Bill Glover"
   avatar: img/avatar.jpg
   showUpdated: true
   menuOnIndex: false
@@ -55,8 +55,8 @@ menu:
     - name: photos
       url: /photos/
       weight: 36
-    - name: github
-      url: https://github.com/billglover
+    - name: now
+      url: /now/
       weight: 40
     - name: contact
       url: /contact/
@@ -74,8 +74,8 @@ menu:
     - name: photos
       url: /photos/
       weight: 26
-    - name: github
-      url: https://github.com/billglover
+    - name: now
+      url: /now/
       weight: 30
     - name: contact
       url: /contact/
