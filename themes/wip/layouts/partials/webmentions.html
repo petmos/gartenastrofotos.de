@@ -1,0 +1,24 @@
+ <section>
+    <h2>Mentions</h2>
+
+    {{ $urlPre := "https://webmention.billglover.me" }}
+    {{ $wmJ := getJSON $urlPre "/get" "?target=" .Page.Permalink }}
+    {{ $count := len $wmJ }}
+
+    {{ if (eq $count 0) }}
+    <p>No one has responded to this post yet. Why not be the first? If you do, 
+        <a href="https://webmention.io/billglover.me/webmention">send me a webmtion</a> here. Find out 
+        more about webmentions on the <a href="https://indieweb.org/Webmention">IndieWeb</a>.
+    </p>
+    {{ else }}
+    <ul>
+    {{ range $wmJ }}
+        <li><a href="{{ .source }}">{{ .title }}</a> at {{ .created_at }}</li>
+    {{ end }}
+    </ul>
+    <p>Respond to this post on your own site. If you do, 
+        <a href="https://webmention.io/billglover.me/webmention">send me a webmtion</a> here. Find out 
+        more about webmentions on the <a href="https://indieweb.org/Webmention">IndieWeb</a>.
+    </p>
+    {{ end }}
+</section>

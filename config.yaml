@@ -25,6 +25,7 @@ params:
   displayTitle: false
   description: architecture - code - people
   copyright: "Copyright © 2023 Bill Glover"
+  photoLicense: CC BY-NC-ND 4.0
   avatar: img/avatar.jpg
   showUpdated: true
   menuOnIndex: false
@@ -94,3 +95,10 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+imaging:
+  exif:
+    disableDate: false
+    disableLatLong: true
+    excludeFields: ""
+    includeFields: ".*"
