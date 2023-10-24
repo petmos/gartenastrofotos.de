@@ -4,9 +4,6 @@
         <figure class="avatar">
             <img class="u-photo" src="{{ .Site.Params.avatar | absURL }}" />
         </figure>
-        <span class="md">
-            {{.Content}}
-        </span>
         <nav>
             <ul>
                 {{ range $.Site.Menus.index }}
@@ -14,6 +11,9 @@
                 {{ end }}
             </ul>
         </nav>
+        <span class="md">
+            {{.Content}}
+        </span>
     </section>
 </header>
 

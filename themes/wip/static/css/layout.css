@@ -283,3 +283,7 @@ figcaption h4 {
     flex-grow: 10;
     border: none;
 }
+
+.intro nav {
+    margin-bottom: 1em;
+}
