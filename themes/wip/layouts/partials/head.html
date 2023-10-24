@@ -5,6 +5,15 @@
     <title>{{ .Site.Title }}</title>
     {{ with .Site.Params.description }}
     <meta name="description" content="{{ . }}">{{ end }}
+    {{ template "_internal/opengraph.html" . }}
+
+
+
+    {{- with $.Resources.ByType "image" -}}
+    {{- range first 6 . }}
+    {{ $image := .Process "fit 640x640 webp photo "}}
+    <meta property="og:image" content="{{ $image.RelPermalink }}" />{{ end -}}
+    {{- end -}}
 
     <link rel="stylesheet" href="{{ "css/layout.css" | absURL}}" crossorigin="anonymous" media="screen">
 
