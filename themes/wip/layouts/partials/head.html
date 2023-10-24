@@ -2,17 +2,21 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Site.Title }}</title>
-    {{ with .Site.Params.description }}
-    <meta name="description" content="{{ . }}">{{ end }}
+    {{- with .Page.Title }}<title>{{ . }}</title>
+    {{- else -}}
+    {{- with .Site.Title }}<title>{{ . }}</title>{{ end -}}
+    {{ end -}}
+    {{ with .Page.Description }}<meta name="description" content="{{ . }}">
+    {{- else -}}
+    {{- with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ end -}}
+    
     {{ template "_internal/opengraph.html" . }}
-
-
 
     {{- with $.Resources.ByType "image" -}}
     {{- range first 6 . }}
     {{ $image := .Process "fit 640x640 webp photo "}}
-    <meta property="og:image" content="{{ $image.RelPermalink }}" />{{ end -}}
+    <meta property="og:image" content="{{ $image.RelPermalink | absURL }}" />{{ end -}}
     {{- end -}}
 
     <link rel="stylesheet" href="{{ "css/layout.css" | absURL}}" crossorigin="anonymous" media="screen">
