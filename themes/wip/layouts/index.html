@@ -1,8 +1,8 @@
 {{ define "main" }}
 <header class="intro">
-    <section class="profile">
+    <section class="profile h-card">
         <figure class="avatar">
-            <img src="{{ .Site.Params.avatar | absURL }}" />
+            <img class="u-photo" src="{{ .Site.Params.avatar | absURL }}" />
         </figure>
         <span class="md">
             {{.Content}}
