@@ -21,7 +21,9 @@ frontmatter:
 
 # Theme parameters
 params:
-  author: Bill Glover
+  author:
+    name: Bill Glover
+    email: bill@billglover.co.uk
   displayTitle: false
   description: architecture - code - people
   copyright: "Copyright © 2023 Bill Glover"
