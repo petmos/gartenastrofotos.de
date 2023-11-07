@@ -4,6 +4,15 @@
             You can find me as <a href="https://hachyderm.io/@bill" rel="me">@BillGlover</a> 
             on Mastodon. <a href="mailto:bill@billglover.co.uk" rel="me">Email me</a>, or find me <a href="/contact">elsewhere</a>.
         </section>
+        {{ $title := .Title }}
+        {{ if .IsHome }}
+            {{ $title = "Everything" }}
+        {{ end }}
+        {{ with .OutputFormats.Get "rss" -}}
+        <section class="md">
+            RSS Feed for <a href="{{ .Permalink }}" title="%s">{{ $title }}</a>
+        </section>
+        {{ end }}
         {{ with .Site.Params.copyright }}
         <section class="copyright">
             {{ . }}
