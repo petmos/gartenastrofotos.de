@@ -35,6 +35,9 @@ params:
     - post
     - watch
   plausible: https://plausible.billglover.me/js/plausible.js
+  webmention:
+    baseURL: https://billglover.me
+    server: https://webmention.io/api/mentions.jf2
   relMe:
     mastodon: https://hachyderm.io/@bill
 
