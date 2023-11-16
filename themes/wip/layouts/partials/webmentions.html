@@ -2,37 +2,29 @@
     {{ $target := urls.JoinPath .Site.Params.Webmention.BaseURL .Page.RelPermalink }}
     {{ $wmJ := getJSON .Site.Params.Webmention.Server "?target=" $target "&sort-by=published" "&sort-dir=up"}}
 
-    {{ $count := len $wmJ.children }}
-    {{ if (eq $count 0) }}
-        <p>No one has responded to this post yet. Why not be the first? If you do, 
-            <a href="https://webmention.io/billglover.me/webmention">send me a webmtion</a> here. Find out 
-            more about webmentions on the <a href="https://indieweb.org/Webmention">IndieWeb</a>.
-        </p>
-    {{ else }}
-
-        {{ range $wmJ.children }}
-        <div class="u-comment h-cite">
-            {{ $type := index . "wm-property" }}
-            {{ if (eq $type "in-reply-to") }}
-            {{ $t := time.AsTime .published }}
-                <p>
-                    ↩️ <a class="u-author h-card" href="{{ .author.url }}">{{ .author.name }}</a> 
-                    replied on 
-                    <time datetime="{{ .published }}" class="dt-published"><a class="u-url" href="{{ .url }}">{{ time.Format "2 Jan 2006" $t }}</a></time>
-                </p>
-                <span style="display: block; border-left: 2px solid white; padding-left: 12px;">{{ .content.html | safeHTML }}</span>
-            {{ else if (eq $type "like-of") }}
-                <p>
-                    💖 <a class="u-author h-card" href="{{ .author.url }}">{{ .author.name }}</a> 
-                    <a class="u-url" href="{{ .url }}">liked</a> this post.
-                </p>
-            {{ else if (eq $type "repost-of") }}
-                <p>
-                    🔁 <a class="u-author h-card" href="{{ .author.url }}">{{ .author.name }}</a> 
-                    <a class="u-url" href="{{ .url }}">shared</a> this post.
-                </p>
-            {{ end }}
+    {{ range $wmJ.children }}
+    <div class="u-comment h-cite">
+        {{ $type := index . "wm-property" }}
+        {{ if (eq $type "in-reply-to") }}
+        {{ $t := time.AsTime .published }}
+            <p>
+                ↩️ <a class="u-author h-card" href="{{ .author.url }}">{{ .author.name }}</a> 
+                replied on 
+                <time datetime="{{ .published }}" class="dt-published"><a class="u-url" href="{{ .url }}">{{ time.Format "2 Jan 2006" $t }}</a></time>
+            </p>
+            <span style="display: block; border-left: 2px solid white; padding-left: 12px;">{{ .content.html | safeHTML }}</span>
+        {{ else if (eq $type "like-of") }}
+            <p>
+                💖 <a class="u-author h-card" href="{{ .author.url }}">{{ .author.name }}</a> 
+                <a class="u-url" href="{{ .url }}">liked</a> this post.
+            </p>
+        {{ else if (eq $type "repost-of") }}
+            <p>
+                🔁 <a class="u-author h-card" href="{{ .author.url }}">{{ .author.name }}</a> 
+                <a class="u-url" href="{{ .url }}">shared</a> this post.
+            </p>
         {{ end }}
-        </div>
+    </div>
     {{ end }}
+
 </section>
