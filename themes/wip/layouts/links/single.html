@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<article class="h-entry">
+    <header class="u-bookmark-of h-cite">
+        <h1><a href="{{ .Params.link }}" title="{{ .Title }}" class="u-url p-name">{{ .Title }}</a></h1>
+        <section class="meta">
+            {{ $dataFormat := .Site.Params.dateFormat | default "2 Jan 2006" }}
+            <span>Bookmarked on <time datetime="{{ .Date }}" itemprop="datePublished" class="dt-published">{{ .Date.Format $dataFormat }}</time></span>
+            {{ if (and .Site.Params.showUpdated (ne .Lastmod .Date)) }}
+            <span>(Updated: <time datetime="{{ .Lastmod }}" itemprop="dateModified" class="dt-update">{{ .Lastmod.Format $dataFormat }}</time>)</span>
+            {{ end }}
+
+            {{ with (.GetTerms "tags") }}
+            <ul class="tags">
+                {{ range . }}
+                <li class="tag p-kind">
+                    <span class="prefix">#</span>
+                    <a href="{{ .Permalink }}" title="{{ .LinkTitle }}" class="p-category">{{ .LinkTitle }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </section>
+    </header>
+
+    <main itemprop="articleBody" class="md e-content">
+        {{ block "content" . }} {{- .Content }} {{- end }}
+        <p>Source: <a href="{{ .Params.link }}" title="{{ .Title }}" class="u-url p-name">{{ .Title }}</a></p>
+    </main>
+
+    <footer style="border-bottom: none; margin-bottom: 1em; padding-top: 3em;">
+        <header style="background-color: var(--item-bg); border-bottom: none; margin: -1em; padding: 12px 24px; border-radius: 1em; margin-bottom: 1em;">
+            <h2 style="margin: 0;">Mentions</h2>
+            <p>Respond to this post on your own site. If you do, 
+            <a href="https://webmention.io/billglover.me/webmention">send me a webmention</a> here. Find out 
+            more about webmentions on the <a href="https://indieweb.org/Webmention">IndieWeb</a>.</p>
+        </header>
+        
+        {{ partial "webmentions.html" .}}
+    </footer>
+</article>
+{{- end }}
+
+{{ define "header" }}
+{{- partial "header" . -}}
+{{ end }}
