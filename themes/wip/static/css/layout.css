@@ -287,3 +287,25 @@ figcaption h4 {
 .intro nav {
     margin-bottom: 1em;
 }
+
+.link-list article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:baseline;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+.link-list article small {
+    padding-left: 0.5em;
+}
+
+.link-list article h4 {
+    margin-bottom: 0.25em;
+    font-size: 1.2em;
+}
+
+.link-list div {
+    min-width: 100%;
+}

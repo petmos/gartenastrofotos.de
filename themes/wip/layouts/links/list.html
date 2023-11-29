@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="h-feed link-list">
+<header>
+    <h1 class="p-name">{{ .Title }}</h1>
+    <span class="p-summary">{{ .Content }}</span>
+</header>
+<section>
+{{ range .Pages }}
+    <article class="h-entry">
+        
+        <span class="tag p-kind">
+            <a class="p-category properties" id="tag" href="{{ .CurrentSection.Permalink }}">#{{.CurrentSection.Title | singularize }}</a>
+        </span>
+        
+        <span class="u-bookmark-of h-cite">
+            <h4><a href="{{ .Params.link }}" title="{{ .Title }}" class="u-url p-name">{{ .Title }}</a></h4>
+        </span>
+
+        <small><a href="{{ .RelPermalink }}" title="{{ .Title }}"><time class="dt-published">{{ .Date | time.Format (i18n "posts.date") }}</time></a></small>
+
+        <div class="e-content md">{{ .Content }}</div>
+    </article>
+{{ end }}
+</section>
+<footer></footer>
+</div>
+{{- end }}
+
+{{ define "header" }}
+{{- partial "header" . -}}
+{{ end }}
