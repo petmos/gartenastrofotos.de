@@ -34,6 +34,7 @@ params:
   mainSections:
     - post
     - watch
+    - travel
   plausible: https://plausible.billglover.me/js/plausible.js
   webmention:
     baseURL: https://billglover.me
