@@ -9,6 +9,7 @@ pygmentsCodefences: true
 pygmentsUseClasses: true
 pluralizelisttitles: "false"
 enableGitInfo: true
+timeout: 2m # extended for image processing
 permalinks:
   post: '/:year/:month/:day/:title/'
 
