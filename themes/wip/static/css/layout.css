@@ -58,7 +58,7 @@ footer section {
 }
 
 main {
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 section.meta {
@@ -308,4 +308,14 @@ figcaption h4 {
 
 .link-list div {
     min-width: 100%;
+}
+
+.toc ul {
+    padding-left: 0;
+    list-style: disc;
+}
+
+.toc ul li {
+    padding-left: 0;
+    list-style: disc;
 }
