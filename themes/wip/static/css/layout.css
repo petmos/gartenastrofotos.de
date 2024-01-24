@@ -319,3 +319,14 @@ figcaption h4 {
     padding-left: 0;
     list-style: disc;
 }
+
+/* RSVPs */
+li.single-line {
+    display:inline;
+}
+li.single-line small {
+    padding-left: 0;
+}
+.hidden {
+    display: none;
+}

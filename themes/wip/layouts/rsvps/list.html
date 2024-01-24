@@ -1,0 +1,14 @@
+{{ define "main" }}
+<header>
+    <h1>{{ .Title }}</h1>
+    {{.Content}}
+</header>
+<section>
+    {{- partial "rsvps.html" . -}}
+</section>
+<footer></footer>
+{{- end }}
+
+{{ define "header" }}
+{{- partial "header" . -}}
+{{ end }}

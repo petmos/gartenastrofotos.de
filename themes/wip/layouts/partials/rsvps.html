@@ -1,0 +1,14 @@
+<ul class="post-list">
+    {{ range .Pages.GroupByDate "2006" }}
+    <h4>{{ .Key }}</h4>
+    <ul class="post-list">
+        {{ range .Pages }}
+        <li class="h-entry single-line">
+            <a href="{{ .Site.BaseURL }}" class="p-author h-card hidden">{{ .Site.Params.Author.Name }}</a> RSVPd <em><span class="p-rsvp">{{ .Params.rsvp }}</span></em>
+            to <a href="{{ .Params.event.url}}" class="u-in-reply-to">{{ .Params.event.name}}</a>
+            <small><time>{{ .Params.event.date | time.Format (i18n "posts.date") }}</time> @ {{ .Params.event.location }}</small>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+</ul>
