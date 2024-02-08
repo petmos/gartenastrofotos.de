@@ -40,3 +40,11 @@ th {
 table {
     border-collapse: collapse;
 }
+
+div.highlight {
+    max-width: 100%;
+  }
+  div.highlight pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
