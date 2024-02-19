@@ -322,7 +322,7 @@ figcaption h4 {
 
 /* RSVPs */
 li.single-line {
-    display:inline;
+    display:inline-block;
 }
 li.single-line small {
     padding-left: 0;
