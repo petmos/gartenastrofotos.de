@@ -23,11 +23,11 @@ frontmatter:
 # Theme parameters
 params:
   author:
-    name: Bill Glover
-    email: bill@billglover.co.uk
+    name: Bill
+    email: hello@bill.dev
   displayTitle: false
   description: geek, photographer, father, love learning
-  copyright: "Copyright © 2023 Bill Glover"
+  copyright: "Copyright © 2024 Bill Glover"
   photoLicense: CC BY-NC-ND 4.0
   avatar: img/avatar.jpg
   showUpdated: true
