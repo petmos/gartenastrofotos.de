@@ -36,7 +36,7 @@ params:
     - post
     - watch
     - travel
-  plausible: https://plausible.billglover.me/js/plausible.js
+  plausible: https://plausible.billglover.me/js/script.js
   webmention:
     baseURL: https://billglover.me
     server: https://webmention.io/api/mentions.jf2
