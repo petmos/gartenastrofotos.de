@@ -40,4 +40,4 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         source: "public/"
         strip_components: 1
-        target: "/var/www/html/"
+        target: "/usr/www/billglover.me/"
