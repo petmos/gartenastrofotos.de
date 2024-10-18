@@ -1,8 +1,8 @@
 <footer class="site-footer">
     {{ if (or (.Params.footer) (not (isset .Params "footer"))) }}
         <section class="md">
-            You can find me as <a href="https://hachyderm.io/@bill" rel="me">@BillGlover</a> 
-            on Mastodon. <a href="mailto:{{ .Site.Params.Author.Email }}" rel="me">Email me</a>, or find me <a href="/contact">elsewhere</a>.
+            You can find me as <a href="https://social.tchncs.de/@petmos" rel="me">@petmos</a> 
+            on Mastodon. <a href="mailto:{{ .Site.Params.Author.Email }}" rel="me">Email me</a>, or find me <a href="{{ .Site.BaseURL }}contact">elsewhere</a>.
         </section>
         {{ $title := .Title }}
         {{ if .IsHome }}

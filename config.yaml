@@ -1,8 +1,8 @@
 languageCode: en-gb
-title: Bill Glover
-baseurl: 'https://billglover.me/'
+title: Peter Möstl
+baseurl: 'https://www.gartenastrofotos.de/'
 theme: wip
-paginate: 10
+pagination.pagerSize: 10
 enableRobotsTXT: true
 MetaDataFormat: yaml
 pygmentsCodefences: true
@@ -23,11 +23,11 @@ frontmatter:
 # Theme parameters
 params:
   author:
-    name: Bill
-    email: hello@bill.dev
+    name: Peter
+    email: peter.moestl@gmx.de
   displayTitle: false
-  description: geek, photographer, father, love learning
-  copyright: "Copyright © 2024 Bill Glover"
+  description: astrophotography, linux
+  copyright: "Copyright © 2023, 2024 Peter Möstl"
   photoLicense: CC BY-NC-ND 4.0
   avatar: img/avatar.jpg
   showUpdated: true
@@ -36,12 +36,11 @@ params:
     - post
     - watch
     - travel
-  plausible: https://plausible.billglover.me/js/script.js
   webmention:
-    baseURL: https://billglover.me
+    baseURL: https://www.gartenastrofotos.de/
     server: https://webmention.io/api/mentions.jf2
   relMe:
-    mastodon: https://hachyderm.io/@bill
+    mastodon: https://social.tchncs.de/@petmos
 
 
 # Use a menu rather than a generated list of sections to avoid
@@ -52,38 +51,38 @@ menu:
       url: /
       weight: 10
     - name: blog
-      url: /post/
+      url: /posts/
       weight: 20
     - name: notes
       url: /notes/
       weight: 30
-    - name: videos
-      url: /videos/
+    - name: equipment
+      url: /equipment/
       weight: 35
-    - name: photos
+    - name: Astrophotography
       url: /photos/
       weight: 36
-    - name: now
-      url: /now/
+    - name: tags
+      url: /tags/
       weight: 40
     - name: contact
       url: /contact/
       weight: 50
   index:
     - name: blog
-      url: /post/
+      url: /posts/
       weight: 10
     - name: notes
       url: /notes/
       weight: 20
-    - name: videos
-      url: /videos/
+    - name: equipment
+      url: /equipment/
       weight: 25
-    - name: photos
+    - name: Astrophotography
       url: /photos/
       weight: 26
-    - name: now
-      url: /now/
+    - name: tags
+      url: /tags/
       weight: 30
     - name: contact
       url: /contact/
@@ -91,9 +90,7 @@ menu:
 
 social:
   rss-square: /index.xml
-  github: 'https://www.github.com/billglover'
-  mastodon: 'https://mastodon.technology/@bill'
-  linkedin: 'https://www.linkedin.com/in/billgloveruk/'
+  mastodon: 'https://social.tchncs.de/@petmos'
 taxonomies:
   tag: tags
   category: categories

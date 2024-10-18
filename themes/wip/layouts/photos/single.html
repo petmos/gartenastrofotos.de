@@ -1,5 +1,17 @@
 {{ define "main" }}
 
+<link rel="stylesheet" href="{{ $.Site.BaseURL }}/lightbox2-2.11.4/css/lightbox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{{ $.Site.BaseURL }}/lightbox2-2.11.4/js/lightbox-plus-jquery.js"></script>
+
+
+<script>
+    lightbox.option({
+      'fitImagesInViewport': false
+    })
+</script>
+
+
 <article itemscope itemType="https://schema.org/BlogPosting">
     <header>
         <h1>{{ .Title }}</h1>
@@ -15,7 +27,7 @@
                 {{ range . }}
                 <li class="tag">
                     <span class="prefix">#</span>
-                    <a href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
+                    <a href="{{ .RelPermalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
                 </li>
                 {{ end }}
             </ul>
@@ -27,17 +39,20 @@
 
     {{ with .Resources.ByType "image" }}
     {{ range . }}
+        {{ $origImage := .Process "png" }}
         {{ $image := .Fit "1024x1024" }}
         <figure>
-            <img src="{{ $image.RelPermalink }}" alt="{{ $.Description }}">
+            <a href="{{ .RelPermalink }}" title="{{ .Title }}" data-lightbox="x">
+                <img src="{{ $image.RelPermalink }}" alt="{{ $.Description }}">
+            </a>
             <figcaption>{{ $.Description }}</figcaption>
         </figure>
 
         {{ if isset .Params "license" }}
-            {{ partial "cc-license.html" (dict "license" .Params.license "title" $image.Title "workURL" $.Page.Permalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
+            {{ partial "cc-license.html" (dict "license" .Params.license "title" $image.Title "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
         {{ else }}
             {{ with $.Site.Params.photolicense }}
-            {{ partial "cc-license.html" (dict "license" $.Site.Params.photolicense "title" $image.Title "workURL" $.Page.Permalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
+            {{ partial "cc-license.html" (dict "license" $.Site.Params.photolicense "title" $image.Title "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
             {{ end }}
         {{ end }}
 
@@ -141,6 +156,9 @@
             </tr>
             {{ end }}
         </table>
+        <br>
+        <hr>
+        <br>
         {{ end }}
 
     {{ end }}
@@ -150,14 +168,6 @@
     </main>
 
     <footer style="border-bottom: none; margin-bottom: 1em; padding-top: 3em;">
-        <header style="background-color: var(--item-bg); border-bottom: none; margin: -1em; padding: 12px 24px; border-radius: 1em; margin-bottom: 1em;">
-            <h2 style="margin: 0;">Mentions</h2>
-            <p>Respond to this post on your own site. If you do, 
-            <a href="https://webmention.io/billglover.me/webmention">send me a webmention</a> here. Find out 
-            more about webmentions on the <a href="https://indieweb.org/Webmention">IndieWeb</a>.</p>
-        </header>
-        
-        {{ partial "webmentions.html" .}}
     </footer>
 </article>
 {{- end }}

@@ -1,18 +1,8 @@
  <section>
     {{ $target := urls.JoinPath .Site.Params.Webmention.BaseURL .Page.RelPermalink }}
-    {{ $data := dict }}
-    {{ $url := (print .Site.Params.Webmention.Server "?target=" $target "&sort-by=published" "&sort-dir=up") }}
-    {{ with resources.GetRemote $url }}
-    {{ with .Err }}
-        {{ errorf "%s" . }}
-    {{ else }}
-        {{ $data = . | transform.Unmarshal }}
-    {{ end }}
-    {{ else }}
-    {{ errorf "Unable to get remote resource %q" $url }}
-    {{ end }}
+    {{ $wmJ := getJSON .Site.Params.Webmention.Server "?target=" $target "&sort-by=published" "&sort-dir=up"}}
 
-    {{ range $data.children }}
+    {{ range $wmJ.children }}
     <div class="u-comment h-cite">
         {{ $type := index . "wm-property" }}
         {{ if (eq $type "in-reply-to") }}
