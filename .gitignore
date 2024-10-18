@@ -14,3 +14,11 @@ resources/*
 
 # Ignore Logs
 logs/*
+
+# ignore images in content
+content/**/*.png
+content/**/*.jpg
+
+static/images/**/*.png
+static/images/**/*.jpg
+static/video/**/*.mp4
