@@ -1,9 +1,3 @@
----
-title: "Contact"
-date: 2024-07-01T21:32:28+02:00
-draft: false
----
-
 # Private Homepage von Peter Möstl
 
 Diese Homepage dient dazu, mein Hobby Astrofotografie zu dokumentieren.
@@ -25,11 +19,3 @@ only personal experiences, especially in the field of astrophotography.
 These pages are intended to facilitate the exchange of information and photos within the family or circle of friends.
 
 There are definitely no advertisements or affiliate links on this homepage that generate monetary income.
-
-
-# Contact
-
-The best way to reach me is email. You can also find me on Mastodon.
-
-* Email: peter.moestl@gmx.de
-* Mastadon: [@petmos@social.tchncs.de](https://social.tchncs.de/@petmos)

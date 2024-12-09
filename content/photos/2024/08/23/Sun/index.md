@@ -30,7 +30,7 @@ resources:
 |Offset | 30 |
 |Cooling | -10°C |
 |Format|SER (Video Stream)|
-|Frames | 1010 x 0.000010s |
+|Frames | 1010@19.88fps |
 |Ort | Pfettrach (Garten) |
 |Datum | 23.08.2024 |
 
@@ -45,7 +45,7 @@ Die verwendeten Tools sind:
 1. [Wikipedia: Siril](https://en.wikipedia.org/wiki/Siril_(software))
 
 ### Aufnahme des Video Streams in KStars als SER
-In KStars wurde dazu ein Video Stream als SER mit 0.000010s Belichtungszeit aufgezeichnet. Insgesamt wurden 1010 Frames aufgezeichnet.
+In KStars wurde dazu ein Video Stream als SER mit 19.88fps aufgezeichnet. Insgesamt wurden 1010 Frames aufgezeichnet.
 
 ### Konvertierung SER zu avi im SER Player
 Da der PlanetarySystemStacker (PSS) unter Linux Probleme mit dem Einlesen von SER-Dateien hat, musste diese zuerst im SER Player in avi konvertiert werden.

@@ -1,5 +1,5 @@
 ---
-title: "Rsync_to_exfat"
+title: "Rsync to exfat"
 date: 2024-08-24T18:06:55+02:00
 draft: false
 ---

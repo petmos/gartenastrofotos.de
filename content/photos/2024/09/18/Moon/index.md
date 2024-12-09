@@ -18,7 +18,7 @@ resources:
 Die Frames wurde wie bei der [Sonne]({{< ref "/photos/2024/08/23/sun/index.md" >}}) mit dem LuckyImaging-Verfahren erstellt.
 
 Zum Stacken wurde wieder der PlanetarySystemStacker verwendet.
-Die Frames wurden mit __drizzle factor string = Off__ gestacked, wobei nur die besten 20 Prozent Frames verwendet wurden.
+Die 252 Frames wurden mit __drizzle factor string = Off__ gestacked, wobei nur die besten 20 Prozent Frames verwendet wurden.
 
 ## Aufnahmedetails
 |Setup       |                          |
@@ -30,6 +30,6 @@ Die Frames wurden mit __drizzle factor string = Off__ gestacked, wobei nur die b
 |Offset | 30 |
 |Cooling | -10°C |
 |Format|SER (Video Stream)|
-|Frames | 252 x 0.000020s |
+|Frames | 50@19.88fps |
 |Ort | Pfettrach (Garten) |
 |Datum | 18.09.2024 |

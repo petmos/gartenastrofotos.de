@@ -16,7 +16,7 @@ tags:
 {{< rawhtml >}} 
 
 <video width=100% controls autoplay>
-    <source src="/pmoestl/hugo/video/allsky-20240510.mp4" type="video/mp4">
+    <source src="/video/allsky-20240510.mp4" type="video/mp4">
     Your browser does not support the video tag.  
 </video>
 
