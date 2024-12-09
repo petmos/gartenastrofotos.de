@@ -10,7 +10,7 @@ draft: true
 mogrify -resize 2731x2731 -quality 100 -path tmp/ *.png
 ```
 
-#Stick images horizontal (left to right): 
+# Stick images horizontal (left to right): 
 
 ```
 convert *.png +append 2024-11-30.png 

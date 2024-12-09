@@ -15,6 +15,8 @@ resources:
    src: '2024-11-30.png'
  - title: M45
    src: 'M45_300x30s_g-101_o-30_T-10_2024-11-30.png'
+ - title: 'M45 tainted'
+   src: 'M45_tainted.png'
  - title: NGC2238
    src: 'NGC_2238_122x30s_g-101_o-30_T-10_2024-11-30_reducedStars.png'
 ---
