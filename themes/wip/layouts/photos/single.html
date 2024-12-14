@@ -56,110 +56,105 @@
             {{ end }}
         {{ end }}
 
-        {{ with .Exif }}
+
+        {{ $image_ext := path.Ext .RelPermalink }}
+        {{ $image_json := .RelPermalink }}
+        {{ $image_json := replace $image_json $image_ext ".json" }}
+        
+
+        
+        {{ $image_json2 := substr .RelPermalink 1 }}
+        {{ $image_json2 := replace $image_json2 $image_ext ".json" }}
+        {{ $image_json2 := replace $image_json2 "photos" "content/photos" 1 }}
+        
+        
         <h2>Metadata</h2>
+        {{ with readFile $image_json2 }}
+        {{ $data := readFile $image_json2 | transform.Unmarshal }}
+        {{ range $data.details }}
+        
+        
         <table>
-            {{ with $image.Title }}
+            {{ with (index .target) }}
             <tr>
-                <th>Title</th>
+                <th>Target</th>
                 <td>{{ . }}</td>
             </tr>
             {{ end }}
-            {{ with .Date }}
+            {{ with (index .telescope) }}
+            <tr>
+                <th>Telescope</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .mount) }}
+            <tr>
+                <th>Mount</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .camera) }}
+            <tr>
+                <th>Camera</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .exposure) }}
+            <tr>
+                <th>Exposure</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .frames) }}
+            <tr>
+                <th>Frames</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .totalexposure) }}
+            <tr>
+                <th>Total exposure</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .gain) }}
+            <tr>
+                <th>Gain</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .offset) }}
+            <tr>
+                <th>Offset</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .cooling) }}
+            <tr>
+                <th>Cooling</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .location) }}
+            <tr>
+                <th>Location</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .date) }}
             <tr>
                 <th>Date</th>
                 <td>{{ . }}</td>
             </tr>
             {{ end }}
-            {{ if isset .Tags "Model" }}
-            <tr>
-                <th>Camera</th>
-                <td>{{ .Tags.Model }}</td>
-            </tr>
-            {{ end }}
-            {{ if isset .Tags "LensModel" }}
-            <tr>
-                <th>Lens</th>
-                <td>{{ .Tags.LensModel }}</td>
-            </tr>
-            {{ end }}
-            {{ if isset .Tags "ExposureTime" }}
-            <tr>
-                <th>Exposure Time</th>
-                <td>{{ .Tags.ExposureTime }}</td>
-            </tr>
-            {{ end }}
-            {{ if isset .Tags "FNumber" }}
-            <tr>
-                <th>F Number</th>
-                <td>{{ .Tags.FNumber }}</td>
-            </tr>
-            {{ end }}
-            {{ if isset .Tags "ISOSpeedRatings" }}
-            <tr>
-                <th>ISO</th>
-                <td>{{ .Tags.ISOSpeedRatings }}</td>
-            </tr>
-            {{ end }}
-            {{ if isset .Tags "FocalLength" }}
-            <tr>
-                <th>Focal Length</th>
-                <td>{{ .Tags.FocalLength }}</td>
-            </tr>
-            {{ end }}
-            {{ if isset .Tags "ExposureMode" }}
-            <tr>
-                <th>Exposure Mode</th>
-                <td>
-                    {{ with (eq .Tags.ExposureMode 1) }}Manual{{ end }}
-                    {{ with (eq .Tags.ExposureMode 0) }}Auto{{ end }}
-                </td>
-            </tr>
-            {{ end }}
-            {{ if isset .Tags "ExposureProgram" }}
-            <tr>
-                <th>Exposure Program</th>
-                <td>
-                    {{ with (eq .Tags.WhiteBalance 1) }}Manual{{ end }}
-                    {{ with (eq .Tags.WhiteBalance 0) }}Auto{{ end }}
-                </td>
-            </tr>
-            {{ end }}
-            {{ with .Tags.ExposureBiasValue }}
-            <tr>
-                <th>Exposure Compensation</th>
-                <td>{{ . }}</td>
-            </tr>
-            {{ end }}
-            {{ if isset .Tags "WhiteBalance" }}
-            <tr>
-                <th>White Balance</th>
-                <td>
-                    {{ with (eq .Tags.WhiteBalance 1) }}Manual{{ end }}
-                    {{ with (eq .Tags.WhiteBalance 0) }}Auto{{ end }}
-                </td>
-            </tr>
-            {{ end }}
-            {{ if isset .Tags "MeteringMode" }}
-            <tr>
-                <th>Metering Mode</th>
-                <td>
-                    {{ with (eq .Tags.MeteringMode 0) }}Unknown{{ end }}
-                    {{ with (eq .Tags.MeteringMode 1) }}Average{{ end }}
-                    {{ with (eq .Tags.MeteringMode 2) }}Center Weighted Average{{ end }}
-                    {{ with (eq .Tags.MeteringMode 3) }}Spot{{ end }}
-                    {{ with (eq .Tags.MeteringMode 4) }}MultiSpot{{ end }}
-                    {{ with (eq .Tags.MeteringMode 5) }}Pattern{{ end }}
-                    {{ with (eq .Tags.MeteringMode 6) }}Partial{{ end }}
-                    {{ with (eq .Tags.MeteringMode 255) }}other{{ end }}
-                </td>
-            </tr>
-            {{ end }}
         </table>
         <br>
-        <hr>
         <br>
+        
         {{ end }}
+        {{ end }}
+
+
 
     {{ end }}
     {{ end }}
