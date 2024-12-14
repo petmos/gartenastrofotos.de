@@ -68,12 +68,12 @@
         {{ $image_json2 := replace $image_json2 "photos" "content/photos" 1 }}
         
         
-        <h2>Metadata</h2>
         {{ with readFile $image_json2 }}
         {{ $data := readFile $image_json2 | transform.Unmarshal }}
         {{ range $data.details }}
         
         
+        <h2>Metadata</h2>
         <table>
             {{ with (index .target) }}
             <tr>

@@ -1,0 +1,18 @@
+{
+  "details": [
+    {
+      "target": "NGC2238 (Rosette Nebula)",
+      "telescope": "SkyWatcher EvoGuide 50ED",
+      "mount": "Skywatcher AZ-GTi",
+      "camera" :"ASI533MC-Pro",
+      "gain" : "101",
+      "offset" : "30",
+      "cooling" : "-10°C",
+      "exposure" : "30s",
+      "frames" : "122",
+      "totalexposure" : "61m",
+      "location" : "Pfettrach (Garten)",
+      "date" : "30.11.2024"
+    }
+  ]
+}
