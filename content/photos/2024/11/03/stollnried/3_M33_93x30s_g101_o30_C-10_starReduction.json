@@ -1,0 +1,21 @@
+{
+  "details": [
+    {
+      "target": "M33 (Dreiecksnebel)",
+      "description" : "Star reduction in Siril with Starnet++",
+      "telescope": "SkyWatcher EvoGuide 50ED",
+      "aperture" : "f/4.8",
+      "focallength" : "242 mm",
+      "mount": "Skywatcher AZ-GTi",
+      "camera" :"ASI533MC-Pro",
+      "gain" : "101",
+      "offset" : "30",
+      "cooling" : "-10 °C",
+      "exposure" : "30 s",
+      "frames" : "90",
+      "totalexposure" : "45 min",
+      "location" : "Sternwarte Stollnried",
+      "date" : "03.11.2024"
+    }
+  ]
+}

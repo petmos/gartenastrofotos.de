@@ -81,6 +81,12 @@
                 <td>{{ . }}</td>
             </tr>
             {{ end }}
+            {{ with (index .description) }}
+            <tr>
+                <th>Description</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
             {{ with (index .telescope) }}
             <tr>
                 <th>Telescope</th>
