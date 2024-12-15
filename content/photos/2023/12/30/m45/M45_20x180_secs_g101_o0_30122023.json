@@ -1,20 +1,19 @@
 {
   "details": [
     {
-      "target": "NGC2238 (Rosette Nebula)",
+      "target": "M45 (Plejaden)",
       "telescope": "SkyWatcher EvoGuide 50ED",
       "aperture" : "f/4.8",
       "focallength" : "242 mm",
       "mount": "Skywatcher AZ-GTi",
       "camera" :"ASI533MC-Pro",
       "gain" : "101",
-      "offset" : "30",
-      "cooling" : "-10 °C",
-      "exposure" : "30 s",
-      "frames" : "122",
-      "totalexposure" : "61 min",
+      "offset" : "0",
+      "exposure" : "180 s",
+      "frames" : "20",
+      "totalexposure" : "60 min",
       "location" : "Pfettrach (Garten)",
-      "date" : "30.11.2024"
+      "date" : "30.12.2023"
     }
   ]
 }

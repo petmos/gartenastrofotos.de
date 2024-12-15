@@ -7,7 +7,7 @@
 
 <script>
     lightbox.option({
-      'fitImagesInViewport': false
+      'fitImagesInViewport': true
     })
 </script>
 
@@ -87,6 +87,18 @@
                 <td>{{ . }}</td>
             </tr>
             {{ end }}
+            {{ with (index .aperture) }}
+            <tr>
+                <th>Aperture</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .focallength) }}
+            <tr>
+                <th>Focal length</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
             {{ with (index .mount) }}
             <tr>
                 <th>Mount</th>
@@ -132,6 +144,12 @@
             {{ with (index .cooling) }}
             <tr>
                 <th>Cooling</th>
+                <td>{{ . }}</td>
+            </tr>
+            {{ end }}
+            {{ with (index .iso) }}
+            <tr>
+                <th>Iso</th>
                 <td>{{ . }}</td>
             </tr>
             {{ end }}

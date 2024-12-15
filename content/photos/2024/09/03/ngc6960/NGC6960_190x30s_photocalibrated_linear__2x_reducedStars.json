@@ -3,14 +3,16 @@
     {
       "target": "NGC 6960",
       "telescope": "SkyWatcher EvoGuide 50ED",
+      "aperture" : "f/4.8",
+      "focallength" : "242 mm",
       "mount": "Skywatcher AZ-GTi",
       "camera" :"ASI533MC-Pro",
       "gain" : "101",
       "offset" : "30",
-      "cooling" : "-10°C",
-      "exposure" : "30s",
+      "cooling" : "-10 °C",
+      "exposure" : "30 s",
       "frames" : "190",
-      "totalexposure" : "95m",
+      "totalexposure" : "95 min",
       "location" : "Pfettrach (Garten)",
       "date" : "03.09.2024"
     }
