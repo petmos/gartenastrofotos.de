@@ -15,3 +15,9 @@ mogrify -resize 2731x2731 -quality 100 -path tmp/ *.png
 ```
 convert *.png +append 2024-11-30.png 
 ```
+
+# Crop image to size 1000x1000 starting at (x,y) = (+750,+750): 
+
+```
+convert image.jpg +repage -crop 1000x1000+750+750 +repage tmp/image.jpg
+```
