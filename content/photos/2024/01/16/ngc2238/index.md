@@ -21,8 +21,9 @@ resources:
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/Rosettennebel)
-
+<table><tr><td>
 Der Rosettennebel ist ein diffuser Emissionsnebel mit eingebettetem offenen Sternhaufen im Sternbild Einhorn. Der Nebel hat eine Größe von 80,0' × 60,0' und eine scheinbare Helligkeit von 6,0 mag. Heute bezeichnen die NGC-Objekte NGC 2237 (Beobachtung von Lewis A. Swift von 1865), NGC 2238 (Beobachtung von Albert Marth vom 28. Februar 1864), NGC 2239 (Beobachtung von John Herschel vom März 1830) und NGC 2246 (Beobachtung von Lewis A. Swift vom 27. Februar 1886) verschiedene Teile des Nebels. Historisch bezeichneten die vier Nummern etwas andere Sternanhäufungen und Nebel in diesem Bereich.
+</td></tr></table>
 
 ## Aufnahmedetails
 

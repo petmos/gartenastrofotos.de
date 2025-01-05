@@ -21,9 +21,10 @@ resources:
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/Messier_52)
-
+<table><tr><td>
 Messier 52 (auch als NGC 7654 bezeichnet) ist ein +7,3 mag heller offener Sternhaufen mit einer Winkelausdehnung von 13′ im Sternbild Kassiopeia.
 Er befindet sich in einer Entfernung von rund 4600 Lichtjahren zur Sonne, sein Alter wird auf 60 Millionen Jahre geschätzt, womit dieses Objekt zu den jüngeren Haufen seiner Art gehört. Insgesamt umfasst er an die 1000 Sonnenmassen und mehr als 600 Sterne.
+</td></tr></table>
 
 ## Aufnahmedetails
 

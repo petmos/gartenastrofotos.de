@@ -13,8 +13,9 @@ resources:
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/Messier_81)
-
+<table><tr><td>
 "Messier 81, auch als NGC 3031 oder Bodes Galaxie bekannt, ist eine 7,0 mag helle Spiralgalaxie vom Hubble-Typ Sb im Sternbild Großer Bär am Nordsternhimmel. Die scheinbare Fläche von M81 beträgt mit 25′ mal 12′ weniger als der Vollmond (scheinbarer Durchmesser rund 30′). Verglichen mit dem Andromedanebel (M31) erscheint M81 mit etwa einem Dreißigstel von dessen Fläche merklich kleiner und ist etwa viermal weiter entfernt, rund 12 Millionen Lichtjahre."
+</td></tr></table>
 
 ## Aufnahmedetails
 |Setup       |                          |

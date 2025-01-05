@@ -22,7 +22,9 @@ resources:
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/Messier_101)
+<table><tr><td>
 Messier 101 oder M101 (nach dem Messier-Katalog), auch als NGC 5457 bezeichnet und Feuerradgalaxie (englisch Pinwheel Galaxy) genannt, ist eine Spiralgalaxie im Sternbild Großer Bär, die mit einer scheinbaren Größe von 28,8′ × 26,9′ und scheinbarer Helligkeit von 7,5 mag erscheint. Ihre Entfernung zur Erde beträgt rund 21 Millionen Lichtjahre, ihr Durchmesser 170.000 Lichtjahre. Damit ist sie ungefähr so groß wie unsere Milchstraße.
+</td></tr></table>
 
 ## Aufnahmedetails
 |Setup       |                          |

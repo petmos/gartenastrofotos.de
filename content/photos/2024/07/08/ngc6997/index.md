@@ -12,9 +12,10 @@ resources:
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/NGC_6997)
-
+<table><tr><td>
 "NGC 6997 ist ein offener Sternhaufen vom Trumpler-Typ III2p im Sternbild Schwan.
 Entdeckt wurde das Objekt am 24. Oktober 1786 von Wilhelm Herschel."
+</td></tr></table>
 
 ## Aufnahmedetails
 |Setup       |                          |

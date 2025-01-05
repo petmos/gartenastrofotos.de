@@ -21,4 +21,6 @@ resources:
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/Plejaden)
+<table><tr><td>
 Die Plejaden (auch Atlantiden, Atlantiaden, Siebengestirn, Taube, Sieben Schwestern, Gluckhenne) sind ein offener Sternhaufen, der mit bloßem Auge gesehen werden kann. Im Messier-Katalog hat er die Bezeichnung M45. Sie sind Teil unserer Galaxie, der Milchstraße. Ihren Namen erhielten sie von den Plejaden der griechischen Mythologie. Die hellsten Sterne sind ebenfalls nach einzelnen Plejaden oder ihren Eltern benannt.
+</td></tr></table>

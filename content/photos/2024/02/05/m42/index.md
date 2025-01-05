@@ -21,7 +21,9 @@ resources:
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/Orionnebel)
+<table><tr><td>
 Der Orionnebel (Katalogbezeichnung M 42 oder NGC 1976) ist ein Emissionsnebel im Sternbild Orion. Er befindet sich – wie das Sonnensystem selbst – im Orionarm der Milchstraße. Durch die große scheinbare Helligkeit seines Zentrums oberhalb der 4. Magnitude ist der Nebel mit bloßem Auge sternähnlich als Teil des Schwertes des Orions südlich der drei Sterne des Oriongürtels gut sichtbar. Insgesamt besitzt er eine Winkelausdehnung von etwa einem Grad. 
+</td></tr></table>
 
 ## Aufnahmedetails
 

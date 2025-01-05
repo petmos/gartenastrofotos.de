@@ -19,10 +19,11 @@ resources:
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/Cirrusnebel)
-
+<table><tr><td>
 "Der Cirrusnebel (auch als Schleier-Nebel, englisch Veil nebula bezeichnet) ist der im optischen Spektrum sichtbare Teil des Cygnusbogens, 
 einer Ansammlung von Emissions- und Reflexionsnebeln, die sich in einer Entfernung von rund 2500 Lichtjahren im Sternbild Schwan befinden. 
 Sie sind zusammen der Überrest einer Supernova, die vor ca. 8.000[4] Jahren stattfand."
+</td></tr></table>
 
 ## Aufnahmedetails
 |Setup       |                          |

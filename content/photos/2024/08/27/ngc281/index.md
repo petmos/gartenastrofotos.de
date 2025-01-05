@@ -16,7 +16,7 @@ resources:
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/NGC_281)
-
+<table><tr><td>
 "NGC 281 ist ein Emissionsnebel im Sternbild Kassiopeia am Nordsternhimmel, der 9500 Lichtjahre von der Erde entfernt ist.
 Der Nebel ist im Index-Katalog als IC 11 erfasst und wird umgangssprachlich wegen seiner Ähnlichkeit mit der bekannten gleichnamigen 
 Videospiel-Hauptfigur vor allem im englischen Sprachraum auch als Pac-Man-Nebel bezeichnet.
@@ -25,6 +25,7 @@ einige durch ihre Röntgenstrahlung hervortreten. Das hellste Mitglied von IC 15
 ist die ionisierende Quelle des Nebels. Der Nebel enthält auch mehrere Bok-Globulen, in denen durch Infrarotaufnahmen Anzeichen 
 für Sternentstehung festgestellt werden konnten. Ebenfalls in Infrarotaufnahmen ist die Molekülwolke erkennbar, deren ionisierter 
 Teil der Emissionsnebel ist."
+</td></tr></table>
 
 ## Workflow
 
