@@ -27,7 +27,7 @@ params:
     email: peter.moestl@gmx.de
   displayTitle: false
   description: astrophotography, linux
-  copyright: "Copyright © 2023, 2024 Peter Möstl"
+  copyright: "Copyright © 2023 - 2025 Peter Möstl."
   photoLicense: CC BY-NC-ND 4.0
   avatar: img/avatar.jpg
   showUpdated: true
