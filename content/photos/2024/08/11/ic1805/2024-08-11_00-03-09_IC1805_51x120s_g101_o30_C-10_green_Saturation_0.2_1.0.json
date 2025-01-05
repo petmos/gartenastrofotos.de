@@ -1,0 +1,20 @@
+{
+  "details": [
+    {
+      "target": "IC1805",
+      "telescope": "SkyWatcher EvoGuide 50ED",
+      "aperture" : "f/4.8",
+      "focallength" : "242 mm",
+      "mount": "Skywatcher AZ-GTi",
+      "camera" :"ASI533MC-Pro",
+      "gain" : "101",
+      "offset" : "30",
+      "cooling" : "-10 °C",
+      "exposure" : "120 s",
+      "frames" : "51",
+      "totalexposure" : "102 min",
+      "location" : "Pfettrach",
+      "date" : "11.08.2024"
+    }
+  ]
+}
