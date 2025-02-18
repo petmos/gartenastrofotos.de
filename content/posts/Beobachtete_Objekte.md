@@ -33,6 +33,10 @@ tags:
  - Western Veil Nebula
  - NGC6992
  - Eastern Veil Nebula
+ - Pferdekopfnebel
+ - NGC2024
+ - Flammennebel
+ - NGC2023
 ---
 
 # Übersicht der beobachteten Objekte
@@ -51,8 +55,9 @@ tags:
 | [M52]({{< ref "/tags/m52/" >}} "M52")                                                           | 4.600 Lj       |               | Kassiopeia | 7,3 mag                |
 | [Western Veil Nebula (NGC 6960)]({{< ref "/tags/ngc6960/" >}} "Western Veil Nebula (NGC 6960)") | 2.500 Lj       |               | Schwan     |                        |
 | [Eastern Veil Nebula (NGC 6992)]({{< ref "/tags/ngc6992/" >}} "Eastern Veil Nebula (NGC 6992)") | 2.500 Lj       |               | Schwan     |                        |
+| [Pferdekopfnebel]({{< ref "/tags/pferdekopfnebel/" >}} "Pferdekopfnebel")                       | 1.500 Lj       | 8′ × 6′       | Orion      |                        |
+| [Flammennebel]({{< ref "/tags/pferdekopfnebel/" >}} "Flammennebel")                             | 1.500 Lj       | 13 Lj         | Orion      |                        |
 | [Orionnebel (M42)]({{< ref "/tags/m42/" >}} "Orionnebel (M42)")                                 | 1.350 Lj       | 24 Lj         | Orion      | 3,7 mag                |
 | [Plejaden (M45)]({{< ref "/tags/m45/" >}} "Plejaden")                                           | 444,2 Lj       | 35 Lj         | Stier      | 1,6 mag                |
 | [Sonne]({{< ref "/tags/sun/" >}} "Sonne")                                                       | 149,600 Mio km | 1.3927 Mio km |            | -26,74 mag             |
 | [Mond]({{< ref "/tags/moon/" >}} "Mond")                                                        | 384.400 km     | 3.474,8 km    |            | −12,74 mag  (Vollmond) |
-

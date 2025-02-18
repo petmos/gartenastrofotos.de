@@ -1,0 +1,21 @@
+{
+  "details": [
+    {
+      "target": "M31 (Andromedanebel)",
+      "description" : "Star reduction with Starnet++ in Siril",
+      "telescope": "SkyWatcher EvoGuide 50ED",
+      "aperture" : "f/4.8",
+      "focallength" : "242 mm",
+      "mount": "Skywatcher AZ-GTi",
+      "camera" :"ASI533MC-Pro",
+      "gain" : "101",
+      "offset" : "30",
+      "cooling" : "-10 °C",
+      "exposure" : "30 s",
+      "frames" : "410",
+      "totalexposure" : "205 min",
+      "location" : "Pfettrach",
+      "date" : "06.09.2024"
+    }
+  ]
+}

@@ -25,5 +25,5 @@ resources:
  - title: 'M45'
    src: '4_M45_30x60_secs_g101_o30_C-10.jpg'
  - title: 'M42 star reduction'
-   src: '5_M42_24x60_secs_g101_o30_C-10_result_reducedStars_final.jpg'
+   src: '5_M42_24x60_secs_g101_o30_C-10_result_reducedStars_final.png'
 ---

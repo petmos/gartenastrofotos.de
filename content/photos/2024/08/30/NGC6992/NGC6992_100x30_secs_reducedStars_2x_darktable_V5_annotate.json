@@ -1,0 +1,21 @@
+{
+  "details": [
+    {
+      "target": "NGC6992",
+      "description": "With starnet++ and darktable",
+      "telescope": "SkyWatcher EvoGuide 50ED",
+      "aperture" : "f/4.8",
+      "focallength" : "242 mm",
+      "mount": "Skywatcher AZ-GTi",
+      "camera" :"ASI533MC-Pro",
+      "gain" : "101",
+      "offset" : "30",
+      "cooling" : "-10 °C",
+      "exposure" : "30 s",
+      "frames" : "100",
+      "totalexposure" : "50 min",
+      "location" : "Pfettrach",
+      "date" : "30.08.2024"
+    }
+  ]
+}

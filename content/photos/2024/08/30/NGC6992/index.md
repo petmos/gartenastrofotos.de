@@ -12,6 +12,8 @@ tags:
  - Stellarmate
  - livestacking
 resources:
+ - title: 'NGC6992 double star reduction with StarNet++, post processing with darkroom'
+   src: 'NGC6992_100x30_secs_reducedStars_2x_darktable_V5_annotate.png'
  - title: 'NGC6992 livestacking with Siril'
    src: 'NGC6992_100x30_secs_siril_livestacking_100x30_secs.png'
  - title: 'NGC6992 star reduction with StarNet++'
