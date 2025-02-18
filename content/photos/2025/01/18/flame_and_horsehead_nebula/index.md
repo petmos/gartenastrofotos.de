@@ -17,7 +17,7 @@ resources:
 
 ## Auswahl in KSTars
 
-Um beide Nebel auf dem Bild zu haben, wurde NGC 2023 ausgewählt.
+Um beide Nebel auf dem Bild zu haben, wurde NGC 2023 ausgewählt. Somit ist der Reflexions- und Emissionsnebel im Zentrum des Bildes zu sehen. 
 
 ## Bearbeitung mit Siril
 
