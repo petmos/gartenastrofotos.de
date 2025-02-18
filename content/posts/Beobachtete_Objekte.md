@@ -4,39 +4,6 @@ date: 2024-10-25T17:21:23+02:00
 draft: false
 tags:
  - Astrofotografie
- - IC1805
- - Herznebel
- - M31
- - Andromedagalaxie
- - M33
- - Dreiecksnebel
- - Triangulumnebel
- - M42
- - Orionnebel
- - M45
- - Plejaden
- - M51
- - Whirlpool Galaxy
- - M52
- - Offener Sternhaufen 
- - M81
- - Bodes Galaxie
- - M82
- - Zigarrengalaxie
- - M101
- - Pinwheel Galaxy
- - NGC281
- - Pacman 
- - NGC2238
- - Rosette Nebula
- - NGC6960
- - Western Veil Nebula
- - NGC6992
- - Eastern Veil Nebula
- - Pferdekopfnebel
- - NGC2024
- - Flammennebel
- - NGC2023
 ---
 
 # Übersicht der beobachteten Objekte
