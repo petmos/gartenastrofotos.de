@@ -37,6 +37,9 @@
 
     <main itemprop="articleBody" class="md">
 
+    {{ block "content" . }} {{- .Content }} {{- end }}
+    <br>
+
     {{ with .Resources.ByType "image" }}
     {{ range . }}
         {{ $origImage := .Process "png" }}
@@ -183,7 +186,6 @@
     {{ end }}
     {{ end }}
 
-    {{ block "content" . }} {{- .Content }} {{- end }}
     </main>
 
     <footer style="border-bottom: none; margin-bottom: 1em; padding-top: 3em;">
