@@ -10,11 +10,11 @@ tags:
  - StarNet++
 resources:
  - title: M31
-   src: 'M31_410x30s_g101_o30_T-10.png'
+   src: 'M31_410x30s_g101_o30_T-10_2024-09-06.png'
  - title: 'M31 reducedStars'
-   src: 'M31_410x30s_g101_o30_T-10_reducedStars.png'
+   src: 'M31_410x30s_g101_o30_T-10_2024-09-06_reducedStars.png'
  - title: 'M31 starless'
-   src: 'M31_410x30s_g101_o30_T-10_starless_starReduction.png'
+   src: 'M31_410x30s_g101_o30_T-10_2024-09-06_starless_starReduction.png'
  - title: 'M31 step forwards within one year'
    src: 'M31_999_2023-09_bis_2024_09.png'
 ---

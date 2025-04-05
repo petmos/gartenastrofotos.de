@@ -25,6 +25,7 @@ tags:
 | [Pferdekopfnebel]({{< ref "/tags/pferdekopfnebel/" >}} "Pferdekopfnebel")                       | 1.500 Lj       | 8′ × 6′       | Orion      |                        |
 | [Flammennebel]({{< ref "/tags/pferdekopfnebel/" >}} "Flammennebel")                             | 1.500 Lj       | 13 Lj         | Orion      |                        |
 | [Orionnebel (M42)]({{< ref "/tags/m42/" >}} "Orionnebel (M42)")                                 | 1.350 Lj       | 24 Lj         | Orion      | 3,7 mag                |
+| [Irisnebel (NGC7023)]({{< ref "/tags/ngc7023/" >}} "Irisnebel (NGC7023)")                       | 1.300 Lj       | 3 Lj          | Kepheus    | 6,8 mag                |
 | [Plejaden (M45)]({{< ref "/tags/m45/" >}} "Plejaden")                                           | 444,2 Lj       | 35 Lj         | Stier      | 1,6 mag                |
 | [Sonne]({{< ref "/tags/sun/" >}} "Sonne")                                                       | 149,600 Mio km | 1.3927 Mio km |            | -26,74 mag             |
 | [Mond]({{< ref "/tags/moon/" >}} "Mond")                                                        | 384.400 km     | 3.474,8 km    |            | −12,74 mag  (Vollmond) |

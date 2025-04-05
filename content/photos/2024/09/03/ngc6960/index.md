@@ -13,11 +13,11 @@ tags:
  - livestacking
 resources:
  - title: 'NGC6960 star reduction with StarNet++'
-   src: 'NGC6960_190x30s_photocalibrated_linear__2x_reducedStars.png'
+   src: 'NGC6960_190x30s_g101_o30_T-10_2024-09-03_photocalibrated_linear__2x_reducedStars.png'
  - title: 'NGC6960 star reduction with StarNet++ and darktable'
-   src: 'NGC6960_190x30s_photocalibrated_linear__2x_reducedStars_darktable.png'
+   src: 'NGC6960_190x30s_g101_o30_T-10_2024-09-03_photocalibrated_linear__2x_reducedStars_darktable.png'
  - title: 'NGC6992 starless'
-   src: 'NGC6960_190x30s_photocalibrated_linear__starless_starReduction.png'
+   src: 'NGC6960_190x30s_g101_o30_T-10_2024-09-03_photocalibrated_linear__starless_starReduction.png'
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/Cirrusnebel)

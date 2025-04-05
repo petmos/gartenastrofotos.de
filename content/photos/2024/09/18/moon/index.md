@@ -19,17 +19,3 @@ Die Frames wurde wie bei der [Sonne]({{< ref "/photos/2024/08/23/sun/index.md" >
 
 Zum Stacken wurde wieder der PlanetarySystemStacker verwendet.
 Die 252 Frames wurden mit __drizzle factor string = Off__ gestacked, wobei nur die besten 20 Prozent Frames verwendet wurden.
-
-## Aufnahmedetails
-|Setup       |                          |
-|------------|--------------------------|
-|Teleskop | SkyWatcher EvoGuide 50ED |
-|Montierung | Skywatcher AZ-GTi |
-|Kamera | ASI533MC-Pro |
-|Gain | 101 |
-|Offset | 30 |
-|Cooling | -10°C |
-|Format|SER (Video Stream)|
-|Frames | 50@19.88fps |
-|Ort | Pfettrach (Garten) |
-|Datum | 18.09.2024 |

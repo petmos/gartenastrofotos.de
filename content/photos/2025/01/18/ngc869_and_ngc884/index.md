@@ -10,7 +10,7 @@ tags:
  - Siril
 resources:
  - title: "h Persei & Chi Persei"
-   src: 'NGC_869_180x60s_g101_o30_C-10_2025-01-18.png'
+   src: 'NGC_869_180x60s_g101_o30_T-10_2025-01-18.png'
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/H_Persei)

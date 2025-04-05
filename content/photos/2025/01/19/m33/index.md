@@ -9,7 +9,7 @@ tags:
  - Siril
 resources:
  - title: "M33 (Dreiecksnebel)"
-   src: 'M33_102x120s_g101_o30_C-10_2025-01-19_v2.png'
+   src: 'M33_102x120s_g101_o30_T-10_2025-01-19_v2.png'
 ---
 
 ## Aus [Wikipedia:](https://de.wikipedia.org/wiki/Dreiecksnebel)

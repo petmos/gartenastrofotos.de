@@ -12,7 +12,7 @@ tags:
  - KStars
 resources:
  - title: "Flammennebel & Pferdekopfnebel Version 2 mit darktable"
-   src: 'NGC_2023_57x60s_g101_o30_C-10_2025-01-18_v2_darktable_02.png'
+   src: 'NGC_2023_57x60s_g101_o30_T-10_2025-01-18_v2_darktable_02.png'
 ---
 
 ## Auswahl in KSTars
@@ -55,5 +55,4 @@ Von der Erde aus betrachtet ist er eine der hellsten Quellen angeregten molekula
 Der Nebel wird durch einen massereichen B-Stern (HD 37903), dem hellsten Mitglied eines jungen Sternhaufen zum Leuchten angeregt.<br>
 Der Nebel selbst ist Teil der viel größeren Molekülwolke Barnard 33 bzw. Lynds 1630, die auch den in der Nähe liegenden Pferdekopfnebel bildet.<br>...<br>
 </td></tr></table>
-
 

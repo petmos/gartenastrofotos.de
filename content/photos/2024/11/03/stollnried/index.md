@@ -19,11 +19,11 @@ resources:
  - title: Overview
    src: '1_Stollnried_03.11.2024.jpg'
  - title: 'C/2023 A3 Tsuchinshan-ATLAS'
-   src: '2_C_2023_A3_Tsuchinshan-ATLAS_40x20s_g101_o30_C-10.jpg'
+   src: '2_C_2023_A3_Tsuchinshan-ATLAS_40x20s_g101_o30_C-10_2024-11-03.png'
  - title: 'M33 star reduction'
-   src: '3_M33_93x30s_g101_o30_C-10_starReduction.jpg'
+   src: '3_M33_93x30s_g101_o30_T-10_2024-11-03_starReduction.png'
  - title: 'M45'
-   src: '4_M45_30x60_secs_g101_o30_C-10.jpg'
+   src: '4_M45_30x60_secs_g101_o30_T-10_2024-11-03.png'
  - title: 'M42 star reduction'
-   src: '5_M42_24x60_secs_g101_o30_C-10_result_reducedStars_final.png'
+   src: '5_M42_24x60_secs_g101_o30_T-10_2024-11-03_result_reducedStars_final.png'
 ---
