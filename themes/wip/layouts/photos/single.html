@@ -55,7 +55,7 @@
             {{ partial "cc-license.html" (dict "license" .Params.license "title" $image.Title "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
         {{ else }}
             {{ with $.Site.Params.photolicense }}
-            {{ partial "cc-license.html" (dict "license" $.Site.Params.photolicense "title" $image.Title "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
+            {{ partial "cc-photo-license.html" (dict "license" $.Site.Params.photolicense "title" $image.Title "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
             {{ end }}
         {{ end }}
 
