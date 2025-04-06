@@ -47,24 +47,6 @@
     {{ range . }}
         {{ $origImage := .Process "png" }}
         {{ $image := .Fit "1024x1024" }}
-        <figure>
-            <!-- This is a multi-line comment
-            <a href="{{ .RelPermalink }}" title="{{ .Title }}" data-lightbox="x">
-            -->
-            <a href="{{ .RelPermalink }}" title="{{ .Title }}">
-                <img src="{{ $image.RelPermalink }}" alt="{{ $.Description }}">
-            </a>
-            <figcaption>{{ $.Description }}</figcaption>
-        </figure>
-
-        {{ if isset .Params "license" }}
-            {{ partial "cc-license.html" (dict "license" .Params.license "title" $image.Title "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
-        {{ else }}
-            {{ with $.Site.Params.photolicense }}
-            {{ partial "cc-photo-license.html" (dict "license" $.Site.Params.photolicense "title" $image.Title "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
-            {{ end }}
-        {{ end }}
-
 
         {{ $image_ext := path.Ext .RelPermalink }}
         {{ $image_json := .RelPermalink }}
@@ -182,12 +164,29 @@
             {{ end }}
         </table>
         <br>
-        <br>
         
         {{ end }}
         {{ end }}
 
+        {{ if isset .Params "license" }}
+            {{ partial "cc-license.html" (dict "license" .Params.license "title" $image.Title "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
+        {{ else }}
+            {{ with $.Site.Params.photolicense }}
+            {{ partial "cc-photo-license.html" (dict "license" $.Site.Params.photolicense "title" $image.Title "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
+            {{ end }}
+        {{ end }}
 
+        <figure>
+            <!-- This is a multi-line comment
+            <a href="{{ .RelPermalink }}" title="{{ .Title }}" data-lightbox="x">
+            -->
+            <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+                <img src="{{ $image.RelPermalink }}" alt="{{ $.Description }}">
+            </a>
+            <figcaption>{{ $.Description }}</figcaption>
+        </figure>
+
+        <br>
 
     {{ end }}
     {{ end }}
