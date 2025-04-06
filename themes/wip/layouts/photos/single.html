@@ -36,16 +36,22 @@
     </header>
 
     <main itemprop="articleBody" class="md">
+		<a href="#astroimages">Beschreibung überspringen und direkt zu den Bildern gehen</a>
+		<br>
 
     {{ block "content" . }} {{- .Content }} {{- end }}
-    <br>
+		<br>
+		<a name="astroimages"></a>
 
     {{ with .Resources.ByType "image" }}
     {{ range . }}
         {{ $origImage := .Process "png" }}
         {{ $image := .Fit "1024x1024" }}
         <figure>
+            <!-- This is a multi-line comment
             <a href="{{ .RelPermalink }}" title="{{ .Title }}" data-lightbox="x">
+            -->
+            <a href="{{ .RelPermalink }}" title="{{ .Title }}">
                 <img src="{{ $image.RelPermalink }}" alt="{{ $.Description }}">
             </a>
             <figcaption>{{ $.Description }}</figcaption>
