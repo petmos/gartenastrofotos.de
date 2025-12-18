@@ -1,0 +1,13 @@
+<!-- layouts/shortcodes/image_fullsize.html -->
+{{- $imageSrc := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- $image := resources.Get $imageSrc -}}
+
+{{- $thumb := $image.Resize "300x" -}}  <!-- Thumbnail generieren: 300px Breite -->
+
+<a href="{{ .Get "src" }}" data-lightbox="gallery" data-title="{{ .Get "alt" }}">
+  <img src="{{ $thumb.Permalink }}"
+		alt="{{ $alt }}" class="thumbnail"
+		style="cursor:pointer;"
+        title="Klick to enlarge">
+</a>
