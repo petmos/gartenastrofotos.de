@@ -36,12 +36,12 @@
     </header>
 
     <main itemprop="articleBody" class="md">
+		{{ .Page.TableOfContents }}
 		<a href="#astroimages">Beschreibung überspringen und direkt zu den Bildern gehen</a>
 		<br>
 
     {{ block "content" . }} {{- .Content }} {{- end }}
 		<br>
-		<a name="astroimages"></a>
 
     {{ with .Resources.ByType "image" }}
     {{ range . }}
@@ -164,6 +164,7 @@
             {{ end }}
         </table>
         <br>
+		<a name="astroimages"></a>
         
         {{ end }}
         {{ end }}
