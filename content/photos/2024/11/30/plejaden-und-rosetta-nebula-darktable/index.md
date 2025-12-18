@@ -2,7 +2,7 @@
 title: "Plejaden und Rosetta Nebula mit Darktable nachbearbeitet"
 date: 2024-12-04T17:30:17+01:00
 draft: true
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - M45
  - Plejaden

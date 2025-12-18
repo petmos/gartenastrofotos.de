@@ -2,7 +2,7 @@
 title: "Annual Review: 2024"
 date: 2024-12-29T15:13:47+01:00
 draft: false
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - Review
 resources:

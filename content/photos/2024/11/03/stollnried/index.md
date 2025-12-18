@@ -2,7 +2,7 @@
 title: "Stollnried 03.11.2024"
 date: 2024-11-04T22:53:31+01:00
 draft: true
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - M33
  - Dreiecksnebel

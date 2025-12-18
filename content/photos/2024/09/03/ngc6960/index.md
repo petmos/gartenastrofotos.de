@@ -2,7 +2,7 @@
 title: "NGC6960 (Western Veil Nebula)"
 date: 2024-09-04T21:56:07+02:00
 draft: true
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - NGC6960
  - Western Veil Nebula

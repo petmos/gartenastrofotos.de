@@ -2,7 +2,7 @@
 title: "NGC6992 (Eastern Veil Nebula)"
 date: 2024-08-31T13:17:35+02:00
 draft: true
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - NGC6992
  - Eastern Veil Nebula

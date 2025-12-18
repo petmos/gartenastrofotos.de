@@ -2,7 +2,7 @@
 title: "NGC6997"
 date: 2024-07-11T18:45:41+02:00
 draft: true
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - NGC6997
  - Sternhaufen

@@ -8,6 +8,7 @@ tags:
  - Siril
  - Darktable
  - imagemagick
+description: "Click on image to enlarge." 
 resources:
  - title: "NGC7023 (Irisnebel)"
    src: 'NGC7023_248x120s_g101_o30_T-10_2025-04-05.png'

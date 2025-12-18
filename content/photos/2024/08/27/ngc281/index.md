@@ -2,7 +2,7 @@
 title: "NGC281"
 date: 2024-08-28T18:09:51+02:00
 draft: true
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - NGC281
  - Pacman

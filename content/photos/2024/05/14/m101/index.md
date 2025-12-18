@@ -11,7 +11,7 @@ Cooling: -10°C
 Frames: 50x120s
 Ort: Pfettrach (Garten)
 Datum: 14.05.2024
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - M101
  - Pinwheel Galaxy

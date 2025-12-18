@@ -2,7 +2,7 @@
 title: "Orion" 
 date: 2023-12-17T22:38:48+02:00 
 draft: true 
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - Orion
  - Sternbild

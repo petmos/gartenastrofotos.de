@@ -10,7 +10,7 @@ Offset: 30
 Frames: 26x180s
 Ort: Pfettrach (Garten)
 Datum: 16.01.2024 
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - NGC2238
  - Rosette Nebula

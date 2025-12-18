@@ -2,7 +2,7 @@
 title: "Sun"
 date: 2024-08-23T22:17:02+02:00
 draft: true
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - Sun
  - PlanetarySystemStacker

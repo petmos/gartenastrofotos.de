@@ -10,7 +10,7 @@ Offset: 10
 Frames: 46x180s
 Ort: Pfettrach (Garten)
 Datum: 09.01.2024
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - M81
 resources:

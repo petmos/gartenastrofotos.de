@@ -10,7 +10,7 @@ Offset: 0
 Frames: 20x180s
 Ort: Pfettrach (Garten)
 Datum: 30.12.2023
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - M45
  - Plejaden

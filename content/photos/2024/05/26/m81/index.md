@@ -2,7 +2,7 @@
 title: "M81 (Bodes Galaxie)" 
 date: 2024-05-26T22:38:48+02:00 
 draft: true 
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - M81
  - Bodes Galaxie

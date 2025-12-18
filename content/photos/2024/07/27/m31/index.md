@@ -2,7 +2,7 @@
 title: "M31 (Andromedagalaxie)"
 date: 2024-07-27T11:48:17+02:00
 draft: true
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - M31
  - Andromedagalaxie

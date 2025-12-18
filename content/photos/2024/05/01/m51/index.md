@@ -11,7 +11,7 @@ Cooling: -10°C
 Frames: 66x120s
 Ort: Pfettrach (Garten)
 Datum: 01.05.2024 
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - M51
  - Whirlpool Galaxy

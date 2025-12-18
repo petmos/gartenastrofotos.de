@@ -10,7 +10,7 @@ Offset: 30
 Frames: 94x60s
 Ort: Pfettrach (Garten)
 Datum: 05.02.2024
-description: "Click on image to enlarge. Return with ESC" 
+description: "Click on image to enlarge." 
 tags:
  - M42
  - Orionnebel
