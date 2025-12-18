@@ -5,7 +5,7 @@
 
 {{- $thumb := $image.Resize "300x" -}}  <!-- Thumbnail generieren: 300px Breite -->
 
-<a href="{{ .Get "src" }}" data-lightbox="gallery" data-title="{{ .Get "alt" }}">
+<a href="{{ $image.RelPermalink }}" data-lightbox="gallery" data-title="{{ .Get "alt" }}">
   <img src="{{ $thumb.Permalink }}"
 		alt="{{ $alt }}" class="thumbnail"
 		style="cursor:pointer;"
