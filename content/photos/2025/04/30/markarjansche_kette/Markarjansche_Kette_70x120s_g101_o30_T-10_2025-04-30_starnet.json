@@ -1,0 +1,21 @@
+{
+  "details": [
+    {
+      "description": "Siril & Starnet",
+      "target": "Markarjansche Kette",
+      "telescope": "SkyWatcher EvoGuide 50ED",
+      "aperture" : "f/4.8",
+      "focallength" : "242 mm",
+      "mount": "Skywatcher AZ-GTi",
+      "camera" :"ASI533MC-Pro",
+      "gain" : "101",
+      "offset" : "30",
+      "cooling" : "-10 °C",
+      "exposure" : "120 s",
+      "frames" : "70",
+      "totalexposure" : "140 min",
+      "location" : "Pfettrach",
+      "date" : "30.04.2025"
+    }
+  ]
+}
