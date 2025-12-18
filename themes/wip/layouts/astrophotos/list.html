@@ -1,0 +1,45 @@
+{{ define "main" }}
+<header>
+    <h1>{{ .Title }}</h1>
+    {{.Content}}
+</header>
+
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+      {{- .Content -}}
+    </section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      {{ range .Paginator.Pages }}
+      {{ $post := .Permalink }}
+      <ul>
+      <!-- 
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          {{ .Render "summary" }}
+        </div>
+      -->
+
+        {{ range $index, $image := .Params.images }}
+            <!-- Automatisch ein Thumbnail erstellen und anzeigen -->
+            {{ $resource := resources.Get $image }}
+            {{ if $resource }}
+               {{ $thumb := $resource.Resize "300x" }}  <!-- Thumbnail erzeugen -->
+               <a href="{{ $post }}">
+               <img src="{{ $thumb.RelPermalink }}"
+                style="cursor:pointer;"
+                title="Klick to enlarge">
+               </a>
+            {{ else }}
+              <p>Bild konnte nicht geladen werden.</p>
+            {{ end }}
+        {{ end }}
+        </ul>
+      {{ end }}
+    </section>{{/* former internal template */}}
+    {{ partial "pagination.html" . -}}
+  </article>
+<footer></footer>
+{{- end }}
+
+{{ define "header" }}
+{{- partial "header" . -}}
+{{ end }}

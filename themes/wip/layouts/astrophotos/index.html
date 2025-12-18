@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <article class="pa3 pa4-ns nested-copy-line-height">
+  <h1>Astrophotos</h1>
+  <ul>
+    {{ range sort .Site.RegularPages "date" "desc" }}
+      {{ if eq .Section "astrophotos" }}
+        <li>
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          
+          {{ $image := .Params.image }}
+          {{ $resource := .Site.GetResource $image }}
+          {{ $thumb := $resource.Resize "300x300" }}  <!-- Thumbnail erstellen -->
+          <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}">
+          
+          <p>{{ .Summary }}</p>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+  </article>
+{{ end }}
