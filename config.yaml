@@ -60,7 +60,7 @@ menu:
       url: /equipment/
       weight: 35
     - name: Astrophotography
-      url: /photos/
+      url: /astrophotos/
       weight: 36
     - name: tags
       url: /tags/
@@ -79,7 +79,7 @@ menu:
       url: /equipment/
       weight: 25
     - name: Astrophotography
-      url: /photos/
+      url: /astrophotos/
       weight: 26
     - name: tags
       url: /tags/
