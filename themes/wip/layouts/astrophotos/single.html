@@ -1,17 +1,25 @@
 {{ define "main" }}
   <ul>
   <h1>{{ .Title }}</h1>
+  </ul>
+  {{ .Page.TableOfContents }}
+  <ul>
   <p>{{ .Content }}</p>
 
     {{ range $index, $image := .Params.images }}
         <!-- Automatisch ein Thumbnail erstellen und anzeigen -->
         {{ $resource := resources.Get $image }}
         {{ if $resource }}
-           {{ $thumb := $resource.Resize "300x" }}  <!-- Thumbnail erzeugen -->
+           {{ $thumb := $resource.Resize "x480" }}  <!-- Thumbnail erzeugen -->
         {{ else }}
           <p>Bild {{ add $index 1 }} konnte nicht geladen werden.</p>
         {{ end }}
     {{ end }}
   </ul>
+<footer></footer>
 
+{{ end }}
+
+{{ define "header" }}
+{{- partial "header" . -}}
 {{ end }}

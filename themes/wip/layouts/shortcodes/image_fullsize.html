@@ -3,11 +3,11 @@
 {{- $alt := .Get "alt" -}}
 {{- $image := resources.Get $imageSrc -}}
 
-{{- $thumb := $image.Resize "300x" -}}  <!-- Thumbnail generieren: 300px Breite -->
+{{- $thumb := $image.Resize "800x" -}}  <!-- Thumbnail generieren: 800px Breite -->
 
-<a href="{{ $image.RelPermalink }}" data-lightbox="gallery" data-title="{{ .Get "alt" }}">
-  <img src="{{ $thumb.Permalink }}"
-		alt="{{ $alt }}" class="thumbnail"
-		style="cursor:pointer;"
-        title="Klick to enlarge">
-</a>
+<img src="{{ $thumb.Permalink }}"
+     class="zoomable"
+     alt="{{ $alt }}"
+     style="cursor:pointer;"
+     title="Klick to enlarge">
+<a href="{{ $image.Permalink }}">Full resolution</a>

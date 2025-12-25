@@ -26,3 +26,4 @@ static/video/**/*.mp4
 # needs to be clarified
 static/.well-known
 themes/wip/static/lightbox2-2.11.4
+assets/images/

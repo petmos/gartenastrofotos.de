@@ -1,3 +1,4 @@
+<!-- footer.html -->
 <footer class="site-footer">
     {{ if (or (.Params.footer) (not (isset .Params "footer"))) }}
         <section class="md">
@@ -21,3 +22,4 @@
         {{ end }}
     {{ end }}
 </footer>
+<script src="{{ "/js/image-overlay.js" | relURL }}"></script>

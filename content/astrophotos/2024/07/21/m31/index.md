@@ -1,0 +1,36 @@
+---
+title: "M31 (Andromedagalaxie)"
+date: 2024-07-21T11:46:16+02:00
+draft: false
+tags:
+ - M31
+ - 
+ - Siril
+images:
+  - "/images/astrophotos/2024/07/21/m31/M31_33x120s_g101_o30_T-10.png"
+---
+
+{{< image_fullsize src="/images/astrophotos/2024/07/21/m31/M31_33x120s_g101_o30_T-10.png" 
+                   alt="Andromedagalaxie" >}}
+
+## Aus [Wikipedia](https://de.wikipedia.org/wiki/Andromedagalaxie)
+<table><tr><td>
+"Die Andromedagalaxie, auch (veraltet) Andromedanebel oder Großer Andromedanebel genannt, 
+ist mit rund 2,5 Millionen Lichtjahren Entfernung die am nächsten zur Milchstraße gelegene Spiralgalaxie. 
+Sie ist zugleich das entfernteste Objekt, das unter guten Bedingungen ohne technische Hilfsmittel mit bloßem Auge beobachtet werden kann. 
+Sie liegt im Sternbild Andromeda, von dem sie ihren Namen erbt. 
+Häufig wird sie auch kurz als M31 bezeichnet nach ihrem Eintrag im Messier-Katalog. "
+</td></tr></table>
+
+## Aufnahmedetails
+|Setup       |                          |
+|------------|--------------------------|
+|Teleskop | SkyWatcher EvoGuide 50ED |
+|Montierung | Skywatcher AZ-GTi |
+|Kamera | ASI533MC-Pro |
+|Gain | 101 |
+|Offset | 30 |
+|Cooling | -10°C |
+|Frames | 33x120s |
+|Ort | Pfettrach (Garten) |
+|Datum | 21.07.2024 |
