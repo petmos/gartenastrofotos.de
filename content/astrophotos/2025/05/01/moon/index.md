@@ -1,8 +1,7 @@
 ---
 title: "Moon"
 date: 2025-05-04T10:36:08+02:00
-draft: true
-description: "Click on image to enlarge." 
+draft: false
 tags:
  - Moon
  - SER player
