@@ -50,6 +50,9 @@ menu:
     - name: home
       url: /
       weight: 10
+    - name: Astrophotography
+      url: /astrophotos/
+      weight: 15
     - name: blog
       url: /posts/
       weight: 20
@@ -59,9 +62,6 @@ menu:
     - name: equipment
       url: /equipment/
       weight: 35
-    - name: Astrophotography
-      url: /astrophotos/
-      weight: 36
     - name: tags
       url: /tags/
       weight: 40
@@ -72,15 +72,15 @@ menu:
     - name: blog
       url: /posts/
       weight: 10
+    - name: Astrophotography
+      url: /astrophotos/
+      weight: 15
     - name: notes
       url: /notes/
       weight: 20
     - name: equipment
       url: /equipment/
       weight: 25
-    - name: Astrophotography
-      url: /astrophotos/
-      weight: 26
     - name: tags
       url: /tags/
       weight: 30
