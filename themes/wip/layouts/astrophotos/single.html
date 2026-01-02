@@ -8,6 +8,17 @@
             <span>(Updated: <time datetime="{{ .Lastmod }}" itemprop="dateModified" class="dt-update">{{ .Lastmod.Format $dataFormat }}</time>)</span>
             {{ end }}
 
+
+            {{ with (.GetTerms "tags") }}
+            <ul class="tags">
+                {{ range . }}
+                <li class="tag">
+                    <span class="prefix">#</span>
+                    <a href="{{ .RelPermalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }}
         </section>
 
   </ul>
