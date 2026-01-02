@@ -9,13 +9,13 @@ tags:
  - Siril
  - StarNet++
 images:
- - "/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06.png"
- - "/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06_reducedStars.png"
- - "/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06_starless_starReduction.png"
+ - "/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06_rotated.png"
+ - "/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06_reducedStars_rotated.png"
+ - "/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06_starless_starReduction_rotated.png"
  - "/images/astrophotos/2024/09/06/m31/M31_999_2023-09_bis_2024_09.png"
 ---
 ## M31
-{{< image_fullsize src="/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06.png"
+{{< image_fullsize src="/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06_rotated.png"
                    alt="M31" >}}
 
 ### Aufnahme-Details
@@ -41,10 +41,10 @@ Dabei wurde automatisch auch die sternenlose Variante erzeugt.
 Schließlich wurde bei allen Bildern die Farbsättigung auf 75, der Hintergrund auf 0 gestellt.
 
 ## M31 reducedStars
-{{< image_fullsize src="/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06_reducedStars.png"
+{{< image_fullsize src="/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06_reducedStars_rotated.png"
                    alt="M31 reducedStars" >}}
 ## M31 starless
-{{< image_fullsize src="/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06_starless_starReduction.png"
+{{< image_fullsize src="/images/astrophotos/2024/09/06/m31/M31_410x30s_g101_o30_T-10_2024-09-06_starless_starReduction_rotated.png"
                    alt="M31 starless" >}}
 ## M31 step forwards within one year
 {{< image_fullsize src="/images/astrophotos/2024/09/06/m31/M31_999_2023-09_bis_2024_09.png"
