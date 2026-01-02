@@ -1,6 +1,6 @@
 ---
-title: "Annual Review: 2025"
-date: 2025-12-25T15:13:47+01:00
+title: "The Year in Review: 2025"
+date: 2025-12-31T18:23:00+01:00
 draft: false
 tags:
  - Review
