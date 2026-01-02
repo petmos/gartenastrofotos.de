@@ -10,16 +10,16 @@
 
 
 
-<img src="{{ $thumb.Permalink }}"
-     class="zoomable"
+<a href="{{ $image.Permalink }}">
+	<img src="{{ $thumb.Permalink }}"
      alt="{{ $alt }}"
      style="cursor:pointer;"
-     title="Klick to enlarge">
-<a href="{{ $image.Permalink }}">Full resolution</a>
+     title="Click for full resolution">
+	</a>
 {{ if isset .Params "license" }}
-    {{ partial "cc-license.html" (dict "license" .Params.license "title" $filename "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
+    {{ partial "cc-license.html" (dict "license" .Params.license "title" $filename "workURL" $image.Permalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
 {{ else }}
     {{ with $.Site.Params.photolicense }}
-    {{ partial "cc-photo-license.html" (dict "license" $.Site.Params.photolicense "title" $filename "workURL" $.Page.RelPermalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
+    {{ partial "cc-photo-license.html" (dict "license" $.Site.Params.photolicense "title" $filename "workURL" $image.Permalink "author" $.Site.Params.Author "authorURL" $.Site.BaseURL) }}
     {{ end }}
 {{ end }}

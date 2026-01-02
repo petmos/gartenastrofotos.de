@@ -1,6 +1,15 @@
 {{ define "main" }}
   <ul>
   <h1>{{ .Title }}</h1>
+        <section class="meta">
+            {{ $dataFormat := .Site.Params.dateFormat | default "2 Jan 2006" }}
+            <span><a class="u-url u-uid" href="{{ .RelPermalink | absURL }}">Published</a> by <span class="p-author">{{ .Site.Params.Author.Name }}</span> on <time datetime="{{ .Date }}" itemprop="datePublished" class="dt-published">{{ .Date.Format $dataFormat }}&nbsp;</time></span>
+            {{ if (and .Site.Params.showUpdated (ne .Lastmod .Date)) }}
+            <span>(Updated: <time datetime="{{ .Lastmod }}" itemprop="dateModified" class="dt-update">{{ .Lastmod.Format $dataFormat }}</time>)</span>
+            {{ end }}
+
+        </section>
+
   </ul>
   {{ .Page.TableOfContents }}
   <ul>
