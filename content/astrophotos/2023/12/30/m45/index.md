@@ -1,7 +1,7 @@
 --- 
 title: "M45 (Plejaden)" 
 date: 2023-12-23T22:38:48+02:00 
-draft: true 
+draft: false 
 Teleskop: SkyWatcher EvoGuide 50ED
 Montierung: Skywatcher AZ-GTi
 Kamera: ASI533MC-Pro

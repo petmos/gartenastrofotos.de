@@ -1,7 +1,7 @@
 ---
 title: "Hardware-Steckbrief"
 date: 2024-10-13T11:56:05+02:00
-draft: true
+draft: false
 tags:
  - Astrofotografie
  - Ausrüstung

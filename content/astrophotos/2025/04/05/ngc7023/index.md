@@ -1,7 +1,7 @@
 ---
 title: "Ngc7023"
 date: 2025-04-05T07:03:22+02:00
-draft: true
+draft: false
 tags:
  - NGC7023
  - Irisnebel
@@ -42,7 +42,8 @@ images:
 {{< image_fullsize src="/images/astrophotos/2025/04/05/ngc7023/NGC7023_248x120s_g101_o30_T-10_2025-04-05_starless.png"
                    alt="NGC7023 (Irisnebel) starless" >}}
 
-##< image_fullsize src="/images/astrophotos/2025/04/05/ngc7023/NGC7023_248x120s_g101_o30_T-10_2025-04-05_reducedStars.png"
+## NGC7023 (Irisnebel) reducedStars
+{{< image_fullsize src="/images/astrophotos/2025/04/05/ngc7023/NGC7023_248x120s_g101_o30_T-10_2025-04-05_reducedStars.png"
                    alt="NGC7023 (Irisnebel) reducedStars" >}}
 
 ## NGC7023 (Irisnebel) reducedStars and darktable

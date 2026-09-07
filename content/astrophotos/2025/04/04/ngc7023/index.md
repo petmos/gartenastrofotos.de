@@ -1,7 +1,7 @@
 ---
 title: "Ngc7023"
 date: 2025-04-04T08:05:22+02:00
-draft: true
+draft: false
 tags:
  - NGC7023
  - Irisnebel

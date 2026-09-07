@@ -1,7 +1,7 @@
 ---
 title: "Plejaden und Rosette Nebula"
 date: 2024-12-01T11:36:54+01:00
-draft: true
+draft: false
 description: "Click on image to enlarge." 
 tags:
  - M45

@@ -1,7 +1,7 @@
 ---
 title: "Mogrify and convert images"
 date: 2024-12-09T20:27:06+01:00
-draft: true
+draft: false
 ---
 
 # Resize a couple of images at once:

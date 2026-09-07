@@ -1,7 +1,7 @@
 ---
 title: "NGC281"
 date: 2024-08-28T18:09:51+02:00
-draft: true
+draft: false
 description: "Click on image to enlarge." 
 tags:
  - NGC281

@@ -1,7 +1,7 @@
 --- 
 title: "M81 (Bodes Galaxie)" 
 date: 2024-01-09T22:38:48+02:00 
-draft: true 
+draft: false 
 Teleskop: SkyWatcher EvoGuide 50ED
 Montierung: Skywatcher AZ-GTi
 Kamera: ASI533MC-Pro

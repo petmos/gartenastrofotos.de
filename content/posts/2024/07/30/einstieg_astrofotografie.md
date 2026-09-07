@@ -1,7 +1,7 @@
 ---
 title: "Mein Einstieg in die Astrofotografie"
 date: 2024-07-30T19:16:55+02:00
-draft: true
+draft: false
 tags:
  - Astrofotografie
  - Linux

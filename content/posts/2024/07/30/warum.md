@@ -1,7 +1,7 @@
 ---
 title: "Astrofotografie (und mehr?)"
 date: 2024-07-30T19:18:39+02:00
-draft: true
+draft: false
 tags:
  - Astrofotografie
  - Linux

@@ -1,7 +1,7 @@
 ---
 title: "M3"
 date: 2025-05-04T09:44:43+02:00
-draft: true
+draft: false
 tags:
  - M3
  - Siril

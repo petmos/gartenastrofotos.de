@@ -1,7 +1,7 @@
 ---
 title: "Flammennebel & Pferdekopfnebel"
 date: 2025-01-19T00:22:18+01:00
-draft: true
+draft: false
 tags:
  - Pferdekopfnebel
  - NGC2024

@@ -1,7 +1,7 @@
 ---
 title: "Setup"
 date: 2024-07-01T22:18:58+02:00
-draft: true
+draft: false
 ---
 
 ![My setup 1!](pasted_image.png "My setup 1")

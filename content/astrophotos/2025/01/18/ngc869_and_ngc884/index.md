@@ -1,7 +1,7 @@
 ---
 title: "NGC869 and NGC884"
 date: 2025-01-19T00:04:30+01:00
-draft: true
+draft: false
 tags:
  - NGC869
  - NGC884

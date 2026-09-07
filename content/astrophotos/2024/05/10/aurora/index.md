@@ -1,7 +1,7 @@
 ---
 title: "Aurora borealis"
 date: 2024-05-11T21:42:07+02:00
-draft: true
+draft: false
 tags:
  - Aurora borealis
  - Polarlicht

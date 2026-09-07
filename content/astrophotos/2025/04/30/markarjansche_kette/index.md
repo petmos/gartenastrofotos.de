@@ -1,7 +1,7 @@
 ---
 title: "Markarjansche Kette"
 date: 2025-04-30T23:59:25+02:00
-draft: true
+draft: false
 tags:
  - Markarjansche Kette
  - Siril
