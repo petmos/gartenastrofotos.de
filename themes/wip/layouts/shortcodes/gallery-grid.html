@@ -1,0 +1,62 @@
+{{ $tileSize := site.Params.tileSize | default 120 }}
+{{ $columns := site.Params.gridColumns | default 12 }}
+
+<div
+    class="gallery-grid"
+    style="
+        --tile-size: {{ $tileSize }}px;
+        --grid-columns: {{ $columns }};
+    ">
+
+{{ range .Page.Params.gallery }}
+
+    {{ $img := resources.Get .image }}
+
+    {{ if not $img }}
+        {{ errorf "gallery-grid: Bild '%s' nicht gefunden" .image }}
+    {{ end }}
+
+    {{ $thumb := $img.Fill "600x600 Center webp q85" }}
+
+    {{ $target := $img.RelPermalink }}
+
+    {{ if .link }}
+        {{ $target = .link }}
+    {{ end }}
+
+    <a
+        class="gallery-tile"
+        href="{{ $target }}"
+        style="
+            grid-column: span {{ default 1 .w }};
+            grid-row: span {{ default 1 .h }};
+        "
+        title="{{ .title }}">
+
+        <img
+            src="{{ $thumb.RelPermalink }}"
+            width="{{ $thumb.Width }}"
+            height="{{ $thumb.Height }}"
+            loading="lazy"
+            decoding="async"
+            alt="{{ .title }}">
+
+        <div class="gallery-caption">
+
+            <div class="gallery-title">
+                {{ .title }}
+            </div>
+
+            {{ with .subtitle }}
+            <div class="gallery-subtitle">
+                {{ . }}
+            </div>
+            {{ end }}
+
+        </div>
+
+    </a>
+
+{{ end }}
+
+</div>

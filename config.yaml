@@ -1,4 +1,4 @@
-languageCode: en-gb
+locale: en-gb
 title: Peter Möstl
 baseurl: 'https://www.gartenastrofotos.de/'
 theme: wip
@@ -22,6 +22,8 @@ frontmatter:
 
 # Theme parameters
 params:
+  tileSize: 80
+  gridColumns: 6
   author:
     name: Peter
     email: peter.moestl@gmx.de
@@ -30,15 +32,15 @@ params:
   copyright: "Copyright © 2023 - 2026 Peter Möstl."
   photoLicense: CC BY-NC-ND 4.0
   avatar: img/avatar.jpg
-  showUpdated: true
+  showUpdated: false
   menuOnIndex: false
   mainSections:
     - post
     - watch
     - travel
-  webmention:
-    baseURL: https://www.gartenastrofotos.de/
-    server: https://webmention.io/api/mentions.jf2
+#  webmention:
+#    baseURL: https://www.gartenastrofotos.de/
+#    server: https://webmention.io/api/mentions.jf2
   relMe:
     mastodon: https://social.tchncs.de/@petmos
 
